@@ -737,6 +737,25 @@
           ],
           "text": "prepend set"
         }
+      },
+      {
+        "box": {
+          "id": "obj-note-unpack",
+          "maxclass": "newobj",
+          "numinlets": 1,
+          "numoutlets": 2,
+          "outlettype": [
+            "int",
+            "int"
+          ],
+          "patching_rect": [
+            60.0,
+            130.0,
+            68.0,
+            22.0
+          ],
+          "text": "unpack 0 0"
+        }
       }
     ],
     "lines": [
@@ -749,42 +768,6 @@
           "destination": [
             "obj-midiparse",
             0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-midiparse",
-            0
-          ],
-          "destination": [
-            "obj-pack",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-midiparse",
-            1
-          ],
-          "destination": [
-            "obj-pack",
-            1
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-midiparse",
-            2
-          ],
-          "destination": [
-            "obj-pack",
-            2
           ]
         }
       },
@@ -1085,6 +1068,42 @@
           "destination": [
             "obj-output-key-set",
             0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-midiparse",
+            0
+          ],
+          "destination": [
+            "obj-note-unpack",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-note-unpack",
+            0
+          ],
+          "destination": [
+            "obj-pack",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-note-unpack",
+            1
+          ],
+          "destination": [
+            "obj-pack",
+            1
           ]
         }
       }
