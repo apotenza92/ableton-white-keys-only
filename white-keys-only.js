@@ -125,7 +125,7 @@ function handleLiveRootNote(value) {
 function handleLiveScaleName(value) {
   var parsed = firstString(value);
   if (parsed) {
-    scale(parsed);
+    scaleName = String(parsed);
     scaleinfo();
   }
 }
@@ -246,7 +246,7 @@ function noteNameWithOctave(value) {
 }
 
 function displayScaleName(value) {
-  return String(value).replace(/_/g, "-");
+  return String(value).replace(/[\s_]+/g, "-");
 }
 
 function firstNumber(value) {
