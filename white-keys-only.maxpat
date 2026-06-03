@@ -498,9 +498,9 @@
       {
         "box": {
           "id": "obj-scale-info-label",
-          "maxclass": "live.text",
+          "maxclass": "live.comment",
           "numinlets": 1,
-          "numoutlets": 2,
+          "numoutlets": 0,
           "patching_rect": [
             320.0,
             270.0,
@@ -517,34 +517,8 @@
           "text": "Scale",
           "annotation_name": "Scale",
           "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
-          "parameter_enable": 1,
-          "mode": 0,
-          "ignoreclick": 1,
-          "parameter_mappable": 0,
-          "outlettype": [
-            "",
-            ""
-          ],
-          "texton": "Scale",
-          "saved_attribute_attributes": {
-            "valueof": {
-              "parameter_longname": "Scale",
-              "parameter_shortname": "Scale",
-              "parameter_type": 2,
-              "parameter_mmax": 1,
-              "parameter_enum": [
-                "off",
-                "on"
-              ],
-              "parameter_invisible": 2,
-              "parameter_mappable": 0,
-              "parameter_annotation_name": "Scale",
-              "parameter_info": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
-              "parameter_order": 1,
-              "parameter_modmode": 0,
-              "parameter_osc_name": "<default>"
-            }
-          }
+          "parameter_enable": 0,
+          "textjustification": 0
         }
       },
       {
@@ -570,27 +544,15 @@
           "annotation_name": "Scale value",
           "annotation": "Current Live Scale Mode root and scale used for white-key mapping.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "textcolor": [
-            0.82,
-            0.82,
-            0.82,
-            1.0
-          ],
-          "bgcolor": [
-            0.12,
-            0.12,
-            0.12,
-            1.0
-          ]
+          "textjustification": 0
         }
       },
       {
         "box": {
           "id": "obj-input-key-label",
-          "maxclass": "live.text",
+          "maxclass": "live.comment",
           "numinlets": 1,
-          "numoutlets": 2,
+          "numoutlets": 0,
           "patching_rect": [
             320.0,
             330.0,
@@ -607,34 +569,8 @@
           "text": "Key input",
           "annotation_name": "Key input",
           "annotation": "Shows the most recent MIDI note received by the device.",
-          "parameter_enable": 1,
-          "mode": 0,
-          "ignoreclick": 1,
-          "parameter_mappable": 0,
-          "outlettype": [
-            "",
-            ""
-          ],
-          "texton": "Key input",
-          "saved_attribute_attributes": {
-            "valueof": {
-              "parameter_longname": "Key input",
-              "parameter_shortname": "Key input",
-              "parameter_type": 2,
-              "parameter_mmax": 1,
-              "parameter_enum": [
-                "off",
-                "on"
-              ],
-              "parameter_invisible": 2,
-              "parameter_mappable": 0,
-              "parameter_annotation_name": "Key input",
-              "parameter_info": "Shows the most recent MIDI note received by the device.",
-              "parameter_order": 2,
-              "parameter_modmode": 0,
-              "parameter_osc_name": "<default>"
-            }
-          }
+          "parameter_enable": 0,
+          "textjustification": 0
         }
       },
       {
@@ -660,27 +596,15 @@
           "annotation_name": "Key input value",
           "annotation": "Most recent MIDI note received. Black keys are shown as ignored.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "textcolor": [
-            0.82,
-            0.82,
-            0.82,
-            1.0
-          ],
-          "bgcolor": [
-            0.12,
-            0.12,
-            0.12,
-            1.0
-          ]
+          "textjustification": 0
         }
       },
       {
         "box": {
           "id": "obj-output-key-label",
-          "maxclass": "live.text",
+          "maxclass": "live.comment",
           "numinlets": 1,
-          "numoutlets": 2,
+          "numoutlets": 0,
           "patching_rect": [
             430.0,
             330.0,
@@ -697,34 +621,8 @@
           "text": "Key output",
           "annotation_name": "Key output",
           "annotation": "Shows the note sent after mapping the white key into the current scale.",
-          "parameter_enable": 1,
-          "mode": 0,
-          "ignoreclick": 1,
-          "parameter_mappable": 0,
-          "outlettype": [
-            "",
-            ""
-          ],
-          "texton": "Key output",
-          "saved_attribute_attributes": {
-            "valueof": {
-              "parameter_longname": "Key output",
-              "parameter_shortname": "Key output",
-              "parameter_type": 2,
-              "parameter_mmax": 1,
-              "parameter_enum": [
-                "off",
-                "on"
-              ],
-              "parameter_invisible": 2,
-              "parameter_mappable": 0,
-              "parameter_annotation_name": "Key output",
-              "parameter_info": "Shows the note sent after mapping the white key into the current scale.",
-              "parameter_order": 3,
-              "parameter_modmode": 0,
-              "parameter_osc_name": "<default>"
-            }
-          }
+          "parameter_enable": 0,
+          "textjustification": 0
         }
       },
       {
@@ -750,19 +648,7 @@
           "annotation_name": "Key output value",
           "annotation": "Mapped MIDI note sent to the instrument.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "textcolor": [
-            0.82,
-            0.82,
-            0.82,
-            1.0
-          ],
-          "bgcolor": [
-            0.12,
-            0.12,
-            0.12,
-            1.0
-          ]
+          "textjustification": 0
         }
       },
       {
@@ -857,9 +743,9 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            24.0,
+            6.0,
             157.0,
-            22.0
+            40.0
           ],
           "mode": 0,
           "ignoreclick": 1,
@@ -957,9 +843,9 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            70.0,
+            52.0,
             157.0,
-            22.0
+            40.0
           ],
           "mode": 0,
           "ignoreclick": 1,
@@ -1057,9 +943,9 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            116.0,
+            98.0,
             157.0,
-            22.0
+            40.0
           ],
           "mode": 0,
           "ignoreclick": 1,
