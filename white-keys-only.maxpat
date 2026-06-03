@@ -512,14 +512,13 @@
             8.0,
             6.0,
             157.0,
-            20.0
+            18.0
           ],
           "text": "Scale",
           "annotation_name": "Scale",
           "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "fontsize": 13.0
+          "textjustification": 0
         }
       },
       {
@@ -537,16 +536,15 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            28.0,
+            24.0,
             157.0,
-            24.0
+            22.0
           ],
           "text": "C major",
           "annotation_name": "Scale value",
           "annotation": "Current Live Scale Mode root and scale used for white-key mapping.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "fontsize": 14.0
+          "textjustification": 0
         }
       },
       {
@@ -564,16 +562,15 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            58.0,
+            52.0,
             157.0,
-            20.0
+            18.0
           ],
           "text": "Key input",
           "annotation_name": "Key input",
           "annotation": "Shows the most recent MIDI note received by the device.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "fontsize": 13.0
+          "textjustification": 0
         }
       },
       {
@@ -591,16 +588,15 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            80.0,
+            70.0,
             157.0,
-            24.0
+            22.0
           ],
           "text": "-",
           "annotation_name": "Key input value",
           "annotation": "Most recent MIDI note received. Black keys are shown as ignored.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "fontsize": 14.0
+          "textjustification": 0
         }
       },
       {
@@ -618,16 +614,15 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            110.0,
+            98.0,
             157.0,
-            20.0
+            18.0
           ],
           "text": "Key output",
           "annotation_name": "Key output",
           "annotation": "Shows the note sent after mapping the white key into the current scale.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "fontsize": 13.0
+          "textjustification": 0
         }
       },
       {
@@ -645,16 +640,15 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            132.0,
+            116.0,
             157.0,
-            24.0
+            22.0
           ],
           "text": "-",
           "annotation_name": "Key output value",
           "annotation": "Mapped MIDI note sent to the instrument.",
           "parameter_enable": 0,
-          "textjustification": 0,
-          "fontsize": 14.0
+          "textjustification": 0
         }
       },
       {
@@ -751,7 +745,7 @@
             8.0,
             6.0,
             157.0,
-            46.0
+            40.0
           ],
           "mode": 0,
           "ignoreclick": 1,
@@ -849,9 +843,9 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            58.0,
+            52.0,
             157.0,
-            46.0
+            40.0
           ],
           "mode": 0,
           "ignoreclick": 1,
@@ -949,9 +943,9 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            110.0,
+            98.0,
             157.0,
-            46.0
+            40.0
           ],
           "mode": 0,
           "ignoreclick": 1,
