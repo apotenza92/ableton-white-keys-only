@@ -515,7 +515,8 @@
             18.0
           ],
           "text": "Scale",
-          "hint": "Scale: the current Live Scale Mode root and scale. Shows Enable-Scale-Mode when Scale Mode is off."
+          "annotation_name": "Scale",
+          "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable-Scale-Mode when Scale Mode is off."
         }
       },
       {
@@ -541,7 +542,8 @@
             22.0
           ],
           "text": "C major",
-          "hint": "Current Live Scale Mode root and scale. Shows Enable-Scale-Mode when Scale Mode is off."
+          "annotation_name": "Scale value",
+          "annotation": "The current Live Scale Mode root and scale used for white-key mapping."
         }
       },
       {
@@ -564,7 +566,8 @@
             18.0
           ],
           "text": "Key input",
-          "hint": "Key input: the most recent MIDI note received by the device."
+          "annotation_name": "Key input",
+          "annotation": "Shows the most recent MIDI note received by the device."
         }
       },
       {
@@ -590,7 +593,8 @@
             22.0
           ],
           "text": "-",
-          "hint": "Most recent MIDI note received. Black keys show as ignored."
+          "annotation_name": "Key input value",
+          "annotation": "The most recent MIDI note received. Black keys are shown as ignored."
         }
       },
       {
@@ -613,7 +617,8 @@
             18.0
           ],
           "text": "Key output",
-          "hint": "Key output: the note sent after mapping white keys into the current scale."
+          "annotation_name": "Key output",
+          "annotation": "Shows the note sent after mapping the white key into the current scale."
         }
       },
       {
@@ -639,7 +644,8 @@
             22.0
           ],
           "text": "-",
-          "hint": "Mapped MIDI note sent to the instrument, or - when the input note is ignored."
+          "annotation_name": "Key output value",
+          "annotation": "The mapped MIDI note sent to the instrument, or - when the input note is ignored."
         }
       }
     ],
