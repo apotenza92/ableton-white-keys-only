@@ -93,8 +93,9 @@
           "id": "obj-js",
           "maxclass": "newobj",
           "numinlets": 1,
-          "numoutlets": 1,
+          "numoutlets": 2,
           "outlettype": [
+            "",
             ""
           ],
           "patching_rect": [
@@ -131,21 +132,20 @@
           "id": "obj-route-status",
           "maxclass": "newobj",
           "numinlets": 1,
-          "numoutlets": 5,
+          "numoutlets": 4,
           "outlettype": [
-            "",
             "",
             "",
             "",
             ""
           ],
           "patching_rect": [
-            60.0,
+            220.0,
             240.0,
-            230.0,
+            190.0,
             22.0
           ],
-          "text": "route status scaleinfo inputkey outputkey"
+          "text": "route scaleinfo inputkey outputkey"
         }
       },
       {
@@ -498,7 +498,7 @@
       {
         "box": {
           "id": "obj-scale-info-label",
-          "maxclass": "comment",
+          "maxclass": "live.comment",
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
@@ -523,7 +523,7 @@
       {
         "box": {
           "id": "obj-scale-info-display",
-          "maxclass": "comment",
+          "maxclass": "live.comment",
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
@@ -561,7 +561,7 @@
       {
         "box": {
           "id": "obj-input-key-label",
-          "maxclass": "comment",
+          "maxclass": "live.comment",
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
@@ -586,7 +586,7 @@
       {
         "box": {
           "id": "obj-input-key-display",
-          "maxclass": "comment",
+          "maxclass": "live.comment",
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
@@ -624,7 +624,7 @@
       {
         "box": {
           "id": "obj-output-key-label",
-          "maxclass": "comment",
+          "maxclass": "live.comment",
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
@@ -649,7 +649,7 @@
       {
         "box": {
           "id": "obj-output-key-display",
-          "maxclass": "comment",
+          "maxclass": "live.comment",
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
@@ -796,18 +796,6 @@
           ],
           "destination": [
             "obj-js",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-js",
-            0
-          ],
-          "destination": [
-            "obj-route-status",
             0
           ]
         }
@@ -1007,47 +995,11 @@
       {
         "patchline": {
           "source": [
-            "obj-route-status",
-            4
-          ],
-          "destination": [
-            "obj-unpack",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-route-status",
-            1
-          ],
-          "destination": [
-            "obj-scale-info-set",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
             "obj-scale-info-set",
             0
           ],
           "destination": [
             "obj-scale-info-display",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-route-status",
-            2
-          ],
-          "destination": [
-            "obj-input-key-set",
             0
           ]
         }
@@ -1067,11 +1019,11 @@
       {
         "patchline": {
           "source": [
-            "obj-route-status",
-            3
+            "obj-output-key-set",
+            0
           ],
           "destination": [
-            "obj-output-key-set",
+            "obj-output-key-display",
             0
           ]
         }
@@ -1079,11 +1031,59 @@
       {
         "patchline": {
           "source": [
-            "obj-output-key-set",
+            "obj-js",
             0
           ],
           "destination": [
-            "obj-output-key-display",
+            "obj-unpack",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-js",
+            1
+          ],
+          "destination": [
+            "obj-route-status",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-route-status",
+            0
+          ],
+          "destination": [
+            "obj-scale-info-set",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-route-status",
+            1
+          ],
+          "destination": [
+            "obj-input-key-set",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-route-status",
+            2
+          ],
+          "destination": [
+            "obj-output-key-set",
             0
           ]
         }

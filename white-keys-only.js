@@ -1,7 +1,8 @@
 autowatch = 1;
 inlets = 1;
-outlets = 1;
-setoutletassist(0, "mapped MIDI notes or status messages");
+outlets = 2;
+setoutletassist(0, "mapped MIDI notes");
+setoutletassist(1, "display status messages");
 
 var rootNote = 0;
 var scaleName = "major";
@@ -153,9 +154,9 @@ function status() {
 
 function scaleinfo() {
   if (liveScaleMode) {
-    outlet(0, ["scaleinfo", noteName(rootNote)].concat(displayScaleName(scaleName)));
+    outlet(1, ["scaleinfo", noteName(rootNote)].concat(displayScaleName(scaleName)));
   } else {
-    outlet(0, ["scaleinfo", "Enable", "Scale", "Mode"]);
+    outlet(1, ["scaleinfo", "Enable", "Scale", "Mode"]);
   }
 }
 
@@ -187,14 +188,14 @@ function list() {
   var mappedPitch = mapPitch(inputPitch);
   if (mappedPitch === null) {
     var ignoredNote = [noteName(inputPitch), "ignored"];
-    outlet(0, ["inputkey"].concat(ignoredNote));
-    outlet(0, ["outputkey"].concat(ignoredNote));
+    outlet(1, ["inputkey"].concat(ignoredNote));
+    outlet(1, ["outputkey"].concat(ignoredNote));
     return;
   }
 
   activeNotes[key] = mappedPitch;
-  outlet(0, ["inputkey", noteNameWithOctave(inputPitch)]);
-  outlet(0, ["outputkey", noteNameWithOctave(mappedPitch)]);
+  outlet(1, ["inputkey", noteNameWithOctave(inputPitch)]);
+  outlet(1, ["outputkey", noteNameWithOctave(mappedPitch)]);
   outlet(0, [mappedPitch, velocity, channel]);
 }
 
