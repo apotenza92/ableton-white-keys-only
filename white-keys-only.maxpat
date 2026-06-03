@@ -539,12 +539,9 @@
       {
         "box": {
           "id": "obj-scale-info-display",
-          "maxclass": "message",
-          "numinlets": 2,
-          "numoutlets": 1,
-          "outlettype": [
-            ""
-          ],
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
           "patching_rect": [
             320.0,
             295.0,
@@ -577,7 +574,20 @@
                 "on"
               ]
             }
-          }
+          },
+          "textjustification": 0,
+          "textcolor": [
+            0.82,
+            0.82,
+            0.82,
+            1.0
+          ],
+          "bgcolor": [
+            0.12,
+            0.12,
+            0.12,
+            1.0
+          ]
         }
       },
       {
@@ -624,12 +634,9 @@
       {
         "box": {
           "id": "obj-input-key-display",
-          "maxclass": "message",
-          "numinlets": 2,
-          "numoutlets": 1,
-          "outlettype": [
-            ""
-          ],
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
           "patching_rect": [
             320.0,
             355.0,
@@ -662,7 +669,20 @@
                 "on"
               ]
             }
-          }
+          },
+          "textjustification": 0,
+          "textcolor": [
+            0.82,
+            0.82,
+            0.82,
+            1.0
+          ],
+          "bgcolor": [
+            0.12,
+            0.12,
+            0.12,
+            1.0
+          ]
         }
       },
       {
@@ -709,12 +729,9 @@
       {
         "box": {
           "id": "obj-output-key-display",
-          "maxclass": "message",
-          "numinlets": 2,
-          "numoutlets": 1,
-          "outlettype": [
-            ""
-          ],
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
           "patching_rect": [
             430.0,
             355.0,
@@ -747,7 +764,20 @@
                 "on"
               ]
             }
-          }
+          },
+          "textjustification": 0,
+          "textcolor": [
+            0.82,
+            0.82,
+            0.82,
+            1.0
+          ],
+          "bgcolor": [
+            0.12,
+            0.12,
+            0.12,
+            1.0
+          ]
         }
       }
     ],
@@ -1024,7 +1054,7 @@
           ],
           "destination": [
             "obj-scale-info-display",
-            1
+            0
           ]
         }
       },
@@ -1036,7 +1066,7 @@
           ],
           "destination": [
             "obj-input-key-display",
-            1
+            0
           ]
         }
       },
@@ -1048,7 +1078,7 @@
           ],
           "destination": [
             "obj-output-key-display",
-            1
+            0
           ]
         }
       },
