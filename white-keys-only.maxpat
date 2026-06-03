@@ -12,8 +12,8 @@
     "rect": [
       100.0,
       100.0,
-      820.0,
-      520.0
+      640.0,
+      360.0
     ],
     "bglocked": 0,
     "openinpresentation": 1,
@@ -165,9 +165,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            24.0,
-            76.0,
-            220.0,
+            248.0,
+            40.0,
+            240.0,
             22.0
           ],
           "text": "Enable Scale Mode to use this"
@@ -219,7 +219,14 @@
             120.0,
             20.0
           ],
-          "text": "Root (0=C, 11=B)"
+          "text": "Root",
+          "presentation": 1,
+          "presentation_rect": [
+            12.0,
+            10.0,
+            34.0,
+            18.0
+          ]
         }
       },
       {
@@ -241,9 +248,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            24.0,
-            36.0,
-            70.0,
+            50.0,
+            8.0,
+            54.0,
             22.0
           ],
           "saved_attribute_attributes": {
@@ -288,7 +295,14 @@
             120.0,
             20.0
           ],
-          "text": "Scale"
+          "text": "Scale",
+          "presentation": 1,
+          "presentation_rect": [
+            114.0,
+            10.0,
+            36.0,
+            18.0
+          ]
         }
       },
       {
@@ -333,9 +347,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            112.0,
-            36.0,
-            160.0,
+            154.0,
+            8.0,
+            128.0,
             22.0
           ]
         }
@@ -375,10 +389,10 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            292.0,
-            36.0,
-            24.0,
-            24.0
+            468.0,
+            8.0,
+            20.0,
+            20.0
           ]
         }
       },
@@ -394,13 +408,7 @@
             120.0,
             20.0
           ],
-          "presentation": 1,
-          "presentation_rect": [
-            322.0,
-            38.0,
-            120.0,
-            20.0
-          ],
+          "presentation": 0,
           "text": "All notes off"
         }
       },
@@ -514,148 +522,6 @@
       },
       {
         "box": {
-          "id": "obj-test-label",
-          "maxclass": "comment",
-          "numinlets": 1,
-          "numoutlets": 0,
-          "patching_rect": [
-            300.0,
-            315.0,
-            180.0,
-            20.0
-          ],
-          "presentation": 1,
-          "presentation_rect": [
-            24.0,
-            116.0,
-            180.0,
-            20.0
-          ],
-          "text": "Test keyboard"
-        }
-      },
-      {
-        "box": {
-          "id": "obj-kslider",
-          "maxclass": "kslider",
-          "numinlets": 2,
-          "numoutlets": 2,
-          "outlettype": [
-            "int",
-            "int"
-          ],
-          "parameter_enable": 0,
-          "patching_rect": [
-            300.0,
-            340.0,
-            336.0,
-            78.0
-          ],
-          "presentation": 1,
-          "presentation_rect": [
-            24.0,
-            140.0,
-            336.0,
-            78.0
-          ]
-        }
-      },
-      {
-        "box": {
-          "id": "obj-output-label",
-          "maxclass": "comment",
-          "numinlets": 1,
-          "numoutlets": 0,
-          "patching_rect": [
-            500.0,
-            270.0,
-            120.0,
-            20.0
-          ],
-          "presentation": 1,
-          "presentation_rect": [
-            386.0,
-            116.0,
-            120.0,
-            20.0
-          ],
-          "text": "Mapped output"
-        }
-      },
-      {
-        "box": {
-          "id": "obj-output-pitch",
-          "maxclass": "number",
-          "numinlets": 1,
-          "numoutlets": 2,
-          "outlettype": [
-            "",
-            "bang"
-          ],
-          "patching_rect": [
-            500.0,
-            300.0,
-            52.0,
-            22.0
-          ],
-          "presentation": 1,
-          "presentation_rect": [
-            386.0,
-            140.0,
-            52.0,
-            22.0
-          ]
-        }
-      },
-      {
-        "box": {
-          "id": "obj-output-velocity",
-          "maxclass": "number",
-          "numinlets": 1,
-          "numoutlets": 2,
-          "outlettype": [
-            "",
-            "bang"
-          ],
-          "patching_rect": [
-            565.0,
-            300.0,
-            52.0,
-            22.0
-          ],
-          "presentation": 1,
-          "presentation_rect": [
-            450.0,
-            140.0,
-            52.0,
-            22.0
-          ]
-        }
-      },
-      {
-        "box": {
-          "id": "obj-output-help",
-          "maxclass": "comment",
-          "numinlets": 1,
-          "numoutlets": 0,
-          "patching_rect": [
-            630.0,
-            300.0,
-            120.0,
-            20.0
-          ],
-          "presentation": 1,
-          "presentation_rect": [
-            516.0,
-            143.0,
-            120.0,
-            20.0
-          ],
-          "text": "pitch / velocity"
-        }
-      },
-      {
-        "box": {
           "id": "obj-scale-info-label",
           "maxclass": "comment",
           "numinlets": 1,
@@ -663,17 +529,17 @@
           "patching_rect": [
             320.0,
             270.0,
-            140.0,
+            80.0,
             20.0
           ],
           "presentation": 1,
           "presentation_rect": [
-            386.0,
-            76.0,
-            140.0,
-            20.0
+            296.0,
+            10.0,
+            48.0,
+            18.0
           ],
-          "text": "Current scale"
+          "text": "Now"
         }
       },
       {
@@ -688,14 +554,14 @@
           "patching_rect": [
             320.0,
             295.0,
-            180.0,
+            160.0,
             22.0
           ],
           "presentation": 1,
           "presentation_rect": [
-            386.0,
-            98.0,
-            180.0,
+            344.0,
+            8.0,
+            116.0,
             22.0
           ],
           "text": "C major"
@@ -710,17 +576,17 @@
           "patching_rect": [
             320.0,
             330.0,
-            100.0,
+            80.0,
             20.0
           ],
           "presentation": 1,
           "presentation_rect": [
-            386.0,
-            176.0,
-            100.0,
-            20.0
+            12.0,
+            43.0,
+            28.0,
+            18.0
           ],
-          "text": "Input key"
+          "text": "In"
         }
       },
       {
@@ -740,9 +606,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            386.0,
-            198.0,
-            80.0,
+            44.0,
+            40.0,
+            72.0,
             22.0
           ],
           "text": "-"
@@ -757,17 +623,17 @@
           "patching_rect": [
             430.0,
             330.0,
-            100.0,
+            80.0,
             20.0
           ],
           "presentation": 1,
           "presentation_rect": [
-            484.0,
-            176.0,
-            100.0,
-            20.0
+            128.0,
+            43.0,
+            32.0,
+            18.0
           ],
-          "text": "Output key"
+          "text": "Out"
         }
       },
       {
@@ -787,12 +653,34 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            484.0,
-            198.0,
-            80.0,
+            164.0,
+            40.0,
+            72.0,
             22.0
           ],
           "text": "-"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-status-label",
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
+          "patching_rect": [
+            540.0,
+            240.0,
+            52.0,
+            20.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            248.0,
+            64.0,
+            52.0,
+            18.0
+          ],
+          "text": "Status"
         }
       }
     ],
@@ -1076,54 +964,6 @@
       {
         "patchline": {
           "source": [
-            "obj-kslider",
-            0
-          ],
-          "destination": [
-            "obj-pack",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-kslider",
-            1
-          ],
-          "destination": [
-            "obj-pack",
-            1
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-unpack",
-            0
-          ],
-          "destination": [
-            "obj-output-pitch",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-unpack",
-            1
-          ],
-          "destination": [
-            "obj-output-velocity",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
             "obj-route-status",
             1
           ],
@@ -1169,6 +1009,13 @@
           ]
         }
       }
-    ]
+    ],
+    "openrect": [
+      0.0,
+      0.0,
+      500.0,
+      92.0
+    ],
+    "devicewidth": 500.0
   }
 }

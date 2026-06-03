@@ -30,13 +30,11 @@ Max for Live MIDI effect that maps only the white keys of a MIDI keyboard to a s
 
 Keep `White Keys Only.amxd` and `white-keys-only.js` in the same folder. The device uses the JavaScript file for its mapping logic.
 
-## Test it in Max first
+## Check it in Live
 
-Open `white-keys-only.maxpat` in Max. It has an on-screen keyboard, so you can click notes without setting up Live first.
+Put the device before an instrument on a MIDI track and play a few white keys.
 
-If you do not hear anything, open Max's MIDI setup and choose a MIDI output, or use the Max default synth if it is available.
-
-The on-screen keyboard proves the note mapping logic. The `.amxd` device is the version that belongs inside an Ableton MIDI track.
+The compact display shows the active scale, the latest input note, and the mapped output note.
 
 ## Root Values
 
