@@ -186,8 +186,9 @@ function list() {
 
   var mappedPitch = mapPitch(inputPitch);
   if (mappedPitch === null) {
-    outlet(0, ["inputkey", noteName(inputPitch), "ignored"]);
-    outlet(0, ["outputkey", "-"]);
+    var ignoredNote = [noteName(inputPitch), "ignored"];
+    outlet(0, ["inputkey"].concat(ignoredNote));
+    outlet(0, ["outputkey"].concat(ignoredNote));
     return;
   }
 

@@ -667,7 +667,7 @@
           ],
           "text": "-",
           "annotation_name": "Key output",
-          "annotation": "Mapped MIDI note sent to the instrument, or - when the input note is ignored.",
+          "annotation": "Shows the note sent after mapping the white key into the current scale.",
           "parameter_enable": 0,
           "textjustification": 0,
           "textcolor": [
