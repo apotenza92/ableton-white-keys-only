@@ -514,7 +514,8 @@
             150.0,
             18.0
           ],
-          "text": "Scale"
+          "text": "Scale",
+          "hint": "Scale: the current Live Scale Mode root and scale. Shows Enable-Scale-Mode when Scale Mode is off."
         }
       },
       {
@@ -539,7 +540,8 @@
             150.0,
             22.0
           ],
-          "text": "C major"
+          "text": "C major",
+          "hint": "Current Live Scale Mode root and scale. Shows Enable-Scale-Mode when Scale Mode is off."
         }
       },
       {
@@ -561,7 +563,8 @@
             150.0,
             18.0
           ],
-          "text": "Key input"
+          "text": "Key input",
+          "hint": "Key input: the most recent MIDI note received by the device."
         }
       },
       {
@@ -586,7 +589,8 @@
             150.0,
             22.0
           ],
-          "text": "-"
+          "text": "-",
+          "hint": "Most recent MIDI note received. Black keys show as ignored."
         }
       },
       {
@@ -608,7 +612,8 @@
             150.0,
             18.0
           ],
-          "text": "Key output"
+          "text": "Key output",
+          "hint": "Key output: the note sent after mapping white keys into the current scale."
         }
       },
       {
@@ -633,7 +638,8 @@
             150.0,
             22.0
           ],
-          "text": "-"
+          "text": "-",
+          "hint": "Mapped MIDI note sent to the instrument, or - when the input note is ignored."
         }
       }
     ],
