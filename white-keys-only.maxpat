@@ -511,7 +511,7 @@
           "presentation_rect": [
             8.0,
             6.0,
-            174.0,
+            157.0,
             18.0
           ],
           "text": "Scale",
@@ -552,7 +552,7 @@
           "presentation_rect": [
             8.0,
             24.0,
-            174.0,
+            157.0,
             22.0
           ],
           "text": "C major",
@@ -606,7 +606,7 @@
           "presentation_rect": [
             8.0,
             52.0,
-            174.0,
+            157.0,
             18.0
           ],
           "text": "Key input",
@@ -647,7 +647,7 @@
           "presentation_rect": [
             8.0,
             70.0,
-            174.0,
+            157.0,
             22.0
           ],
           "text": "-",
@@ -701,7 +701,7 @@
           "presentation_rect": [
             8.0,
             98.0,
-            174.0,
+            157.0,
             18.0
           ],
           "text": "Key output",
@@ -742,7 +742,7 @@
           "presentation_rect": [
             8.0,
             116.0,
-            174.0,
+            157.0,
             22.0
           ],
           "text": "-",
@@ -1098,10 +1098,10 @@
     "openrect": [
       0.0,
       0.0,
-      190.0,
+      171.0,
       146.0
     ],
-    "devicewidth": 190.0,
+    "devicewidth": 171.0,
     "description": "",
     "digest": ""
   }
