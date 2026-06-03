@@ -153,9 +153,9 @@ function status() {
 
 function scaleinfo() {
   if (liveScaleMode) {
-    outlet(0, ["scaleinfo", noteName(rootNote) + " " + displayScaleName(scaleName)]);
+    outlet(0, ["scaleinfo", noteName(rootNote) + "-" + displayScaleName(scaleName)]);
   } else {
-    outlet(0, ["scaleinfo", "Enable Scale Mode"]);
+    outlet(0, ["scaleinfo", "Enable-Scale-Mode"]);
   }
 }
 
@@ -186,7 +186,7 @@ function list() {
 
   var mappedPitch = mapPitch(inputPitch);
   if (mappedPitch === null) {
-    outlet(0, ["inputkey", noteName(inputPitch) + " ignored"]);
+    outlet(0, ["inputkey", noteName(inputPitch) + "-ignored"]);
     outlet(0, ["outputkey", "-"]);
     return;
   }
@@ -246,7 +246,7 @@ function noteNameWithOctave(value) {
 }
 
 function displayScaleName(value) {
-  return String(value).replace(/_/g, " ");
+  return String(value).replace(/_/g, "-");
 }
 
 function firstNumber(value) {
