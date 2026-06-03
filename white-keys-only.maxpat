@@ -683,6 +683,60 @@
             1.0
           ]
         }
+      },
+      {
+        "box": {
+          "id": "obj-scale-info-set",
+          "maxclass": "newobj",
+          "numinlets": 1,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            320.0,
+            292.0,
+            72.0,
+            22.0
+          ],
+          "text": "prepend set"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-input-key-set",
+          "maxclass": "newobj",
+          "numinlets": 1,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            320.0,
+            352.0,
+            72.0,
+            22.0
+          ],
+          "text": "prepend set"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-output-key-set",
+          "maxclass": "newobj",
+          "numinlets": 1,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            430.0,
+            352.0,
+            72.0,
+            22.0
+          ],
+          "text": "prepend set"
+        }
       }
     ],
     "lines": [
@@ -954,7 +1008,31 @@
         "patchline": {
           "source": [
             "obj-route-status",
+            4
+          ],
+          "destination": [
+            "obj-unpack",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-route-status",
             1
+          ],
+          "destination": [
+            "obj-scale-info-set",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-scale-info-set",
+            0
           ],
           "destination": [
             "obj-scale-info-display",
@@ -969,6 +1047,18 @@
             2
           ],
           "destination": [
+            "obj-input-key-set",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-input-key-set",
+            0
+          ],
+          "destination": [
             "obj-input-key-display",
             0
           ]
@@ -981,7 +1071,7 @@
             3
           ],
           "destination": [
-            "obj-output-key-display",
+            "obj-output-key-set",
             0
           ]
         }
@@ -989,11 +1079,11 @@
       {
         "patchline": {
           "source": [
-            "obj-route-status",
-            4
+            "obj-output-key-set",
+            0
           ],
           "destination": [
-            "obj-unpack",
+            "obj-output-key-display",
             0
           ]
         }
