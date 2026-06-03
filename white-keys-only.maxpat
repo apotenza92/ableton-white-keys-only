@@ -541,8 +541,8 @@
             22.0
           ],
           "text": "C major",
-          "annotation_name": "Scale value",
-          "annotation": "Current Live Scale Mode root and scale used for white-key mapping.",
+          "annotation_name": "Scale",
+          "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
           "parameter_enable": 0,
           "textjustification": 0
         }
@@ -568,7 +568,7 @@
           ],
           "text": "Key input",
           "annotation_name": "Key input",
-          "annotation": "Shows the most recent MIDI note received by the device.",
+          "annotation": "Shows the most recent MIDI note received by the device. Black keys are shown as ignored.",
           "parameter_enable": 0,
           "textjustification": 0
         }
@@ -593,8 +593,8 @@
             22.0
           ],
           "text": "-",
-          "annotation_name": "Key input value",
-          "annotation": "Most recent MIDI note received. Black keys are shown as ignored.",
+          "annotation_name": "Key input",
+          "annotation": "Shows the most recent MIDI note received by the device. Black keys are shown as ignored.",
           "parameter_enable": 0,
           "textjustification": 0
         }
@@ -620,7 +620,7 @@
           ],
           "text": "Key output",
           "annotation_name": "Key output",
-          "annotation": "Shows the note sent after mapping the white key into the current scale.",
+          "annotation": "Shows the mapped MIDI note sent from this device. Ignored black-key inputs show the same ignored note here.",
           "parameter_enable": 0,
           "textjustification": 0
         }
@@ -645,8 +645,8 @@
             22.0
           ],
           "text": "-",
-          "annotation_name": "Key output value",
-          "annotation": "Mapped MIDI note sent to the instrument.",
+          "annotation_name": "Key output",
+          "annotation": "Shows the mapped MIDI note sent from this device. Ignored black-key inputs show the same ignored note here.",
           "parameter_enable": 0,
           "textjustification": 0
         }
@@ -752,8 +752,8 @@
           "parameter_mappable": 0,
           "text": "",
           "texton": "",
-          "annotation_name": "Scale value",
-          "annotation": "Current Live Scale Mode root and scale used for white-key mapping.",
+          "annotation_name": "Scale",
+          "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
           "bgcolor": [
             0.0,
             0.0,
@@ -780,8 +780,8 @@
           ],
           "saved_attribute_attributes": {
             "valueof": {
-              "parameter_longname": "Scale value",
-              "parameter_shortname": "Scale value",
+              "parameter_longname": "Scale",
+              "parameter_shortname": "Scale",
               "parameter_type": 2,
               "parameter_mmax": 1,
               "parameter_enum": [
@@ -790,8 +790,8 @@
               ],
               "parameter_invisible": 0,
               "parameter_mappable": 0,
-              "parameter_annotation_name": "Scale value",
-              "parameter_info": "Current Live Scale Mode root and scale used for white-key mapping.",
+              "parameter_annotation_name": "Scale",
+              "parameter_info": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
               "parameter_modmode": 0,
               "parameter_osc_name": "<default>",
               "parameter_order": 102
@@ -869,8 +869,8 @@
           "parameter_mappable": 0,
           "text": "",
           "texton": "",
-          "annotation_name": "Key input value",
-          "annotation": "Most recent MIDI note received. Black keys are shown as ignored.",
+          "annotation_name": "Key input",
+          "annotation": "Shows the most recent MIDI note received by the device. Black keys are shown as ignored.",
           "bgcolor": [
             0.0,
             0.0,
@@ -897,8 +897,8 @@
           ],
           "saved_attribute_attributes": {
             "valueof": {
-              "parameter_longname": "Key input value",
-              "parameter_shortname": "Key input value",
+              "parameter_longname": "Key input",
+              "parameter_shortname": "Key input",
               "parameter_type": 2,
               "parameter_mmax": 1,
               "parameter_enum": [
@@ -907,8 +907,8 @@
               ],
               "parameter_invisible": 0,
               "parameter_mappable": 0,
-              "parameter_annotation_name": "Key input value",
-              "parameter_info": "Most recent MIDI note received. Black keys are shown as ignored.",
+              "parameter_annotation_name": "Key input",
+              "parameter_info": "Shows the most recent MIDI note received by the device. Black keys are shown as ignored.",
               "parameter_modmode": 0,
               "parameter_osc_name": "<default>",
               "parameter_order": 104
@@ -986,8 +986,8 @@
           "parameter_mappable": 0,
           "text": "",
           "texton": "",
-          "annotation_name": "Key output value",
-          "annotation": "Mapped MIDI note sent to the instrument. Ignored black-key inputs show the same ignored note here.",
+          "annotation_name": "Key output",
+          "annotation": "Shows the mapped MIDI note sent from this device. Ignored black-key inputs show the same ignored note here.",
           "bgcolor": [
             0.0,
             0.0,
@@ -1014,8 +1014,8 @@
           ],
           "saved_attribute_attributes": {
             "valueof": {
-              "parameter_longname": "Key output value",
-              "parameter_shortname": "Key output value",
+              "parameter_longname": "Key output",
+              "parameter_shortname": "Key output",
               "parameter_type": 2,
               "parameter_mmax": 1,
               "parameter_enum": [
@@ -1024,8 +1024,8 @@
               ],
               "parameter_invisible": 0,
               "parameter_mappable": 0,
-              "parameter_annotation_name": "Key output value",
-              "parameter_info": "Mapped MIDI note sent to the instrument. Ignored black-key inputs show the same ignored note here.",
+              "parameter_annotation_name": "Key output",
+              "parameter_info": "Shows the mapped MIDI note sent from this device. Ignored black-key inputs show the same ignored note here.",
               "parameter_modmode": 0,
               "parameter_osc_name": "<default>",
               "parameter_order": 106
@@ -1122,7 +1122,7 @@
           "text": "",
           "texton": "",
           "annotation_name": "Scale",
-          "annotation": "Shows whether Live Scale Mode is active and which scale is currently used.",
+          "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
           "bgcolor": [
             0.0,
             0.0,
@@ -1160,7 +1160,7 @@
               "parameter_invisible": 0,
               "parameter_mappable": 0,
               "parameter_annotation_name": "Scale",
-              "parameter_info": "Shows whether Live Scale Mode is active and which scale is currently used.",
+              "parameter_info": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
               "parameter_modmode": 0,
               "parameter_osc_name": "<default>",
               "parameter_order": 101
@@ -1239,7 +1239,7 @@
           "text": "",
           "texton": "",
           "annotation_name": "Key input",
-          "annotation": "Shows the most recent MIDI note received by the device.",
+          "annotation": "Shows the most recent MIDI note received by the device. Black keys are shown as ignored.",
           "bgcolor": [
             0.0,
             0.0,
@@ -1277,7 +1277,7 @@
               "parameter_invisible": 0,
               "parameter_mappable": 0,
               "parameter_annotation_name": "Key input",
-              "parameter_info": "Shows the most recent MIDI note received by the device.",
+              "parameter_info": "Shows the most recent MIDI note received by the device. Black keys are shown as ignored.",
               "parameter_modmode": 0,
               "parameter_osc_name": "<default>",
               "parameter_order": 103
@@ -1356,7 +1356,7 @@
           "text": "",
           "texton": "",
           "annotation_name": "Key output",
-          "annotation": "Shows the mapped MIDI note sent from this device.",
+          "annotation": "Shows the mapped MIDI note sent from this device. Ignored black-key inputs show the same ignored note here.",
           "bgcolor": [
             0.0,
             0.0,
@@ -1394,7 +1394,7 @@
               "parameter_invisible": 0,
               "parameter_mappable": 0,
               "parameter_annotation_name": "Key output",
-              "parameter_info": "Shows the mapped MIDI note sent from this device.",
+              "parameter_info": "Shows the mapped MIDI note sent from this device. Ignored black-key inputs show the same ignored note here.",
               "parameter_modmode": 0,
               "parameter_osc_name": "<default>",
               "parameter_order": 105
