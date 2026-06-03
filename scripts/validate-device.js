@@ -141,6 +141,7 @@ list(61, 100, 1);
 handleLiveScaleMode(0);
 list(61, 90, 1);
 list(61, 0, 1);
+handleLiveScaleMode(1);
 `);
 
   const normalisedEvents = events.map((event) => ({
@@ -199,6 +200,18 @@ list(61, 0, 1);
     )
   ) {
     throw new Error("JS did not show disabled output when Scale Mode is off");
+  }
+
+  if (
+    !normalisedEvents.some((event) => event.index === 1 && event.args.join(" ") === "inputkey -")
+  ) {
+    throw new Error("JS did not clear input when Scale Mode is re-enabled");
+  }
+
+  if (
+    !normalisedEvents.some((event) => event.index === 1 && event.args.join(" ") === "outputkey -")
+  ) {
+    throw new Error("JS did not clear output when Scale Mode is re-enabled");
   }
 }
 

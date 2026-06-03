@@ -147,6 +147,8 @@ function handleLiveScaleMode(value) {
     liveScaleMode = parsed ? 1 : 0;
     if (wasEnabled && !liveScaleMode) {
       activeNotes = {};
+    } else if (!wasEnabled && liveScaleMode) {
+      clearKeyInfo();
     }
     status();
   }
@@ -210,6 +212,11 @@ function list() {
 function disabledKeyInfo() {
   outlet(1, ["inputkey", "Disabled"]);
   outlet(1, ["outputkey", "Disabled"]);
+}
+
+function clearKeyInfo() {
+  outlet(1, ["inputkey", "-"]);
+  outlet(1, ["outputkey", "-"]);
 }
 
 function allnotesoff() {
