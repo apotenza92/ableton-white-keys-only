@@ -12,8 +12,8 @@
     "rect": [
       100.0,
       100.0,
-      640.0,
-      360.0
+      560.0,
+      260.0
     ],
     "bglocked": 0,
     "openinpresentation": 1,
@@ -150,31 +150,6 @@
       },
       {
         "box": {
-          "id": "obj-status-display",
-          "maxclass": "message",
-          "numinlets": 2,
-          "numoutlets": 1,
-          "outlettype": [
-            ""
-          ],
-          "patching_rect": [
-            320.0,
-            240.0,
-            220.0,
-            22.0
-          ],
-          "presentation": 1,
-          "presentation_rect": [
-            248.0,
-            40.0,
-            240.0,
-            22.0
-          ],
-          "text": "Enable Scale Mode to use this"
-        }
-      },
-      {
-        "box": {
           "id": "obj-midiformat",
           "maxclass": "newobj",
           "numinlets": 7,
@@ -220,7 +195,7 @@
             20.0
           ],
           "text": "Root",
-          "presentation": 1,
+          "presentation": 0,
           "presentation_rect": [
             12.0,
             10.0,
@@ -246,7 +221,7 @@
             70.0,
             22.0
           ],
-          "presentation": 1,
+          "presentation": 0,
           "presentation_rect": [
             50.0,
             8.0,
@@ -296,7 +271,7 @@
             20.0
           ],
           "text": "Scale",
-          "presentation": 1,
+          "presentation": 0,
           "presentation_rect": [
             114.0,
             10.0,
@@ -345,7 +320,7 @@
             160.0,
             22.0
           ],
-          "presentation": 1,
+          "presentation": 0,
           "presentation_rect": [
             154.0,
             8.0,
@@ -387,7 +362,7 @@
             24.0,
             24.0
           ],
-          "presentation": 1,
+          "presentation": 0,
           "presentation_rect": [
             468.0,
             8.0,
@@ -534,9 +509,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            296.0,
-            10.0,
-            48.0,
+            8.0,
+            8.0,
+            32.0,
             18.0
           ],
           "text": "Now"
@@ -559,8 +534,8 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            344.0,
-            8.0,
+            42.0,
+            6.0,
             116.0,
             22.0
           ],
@@ -581,9 +556,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            12.0,
-            43.0,
-            28.0,
+            168.0,
+            8.0,
+            18.0,
             18.0
           ],
           "text": "In"
@@ -606,9 +581,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            44.0,
-            40.0,
-            72.0,
+            190.0,
+            6.0,
+            50.0,
             22.0
           ],
           "text": "-"
@@ -628,9 +603,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            128.0,
-            43.0,
-            32.0,
+            250.0,
+            8.0,
+            24.0,
             18.0
           ],
           "text": "Out"
@@ -653,34 +628,12 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            164.0,
-            40.0,
-            72.0,
+            278.0,
+            6.0,
+            50.0,
             22.0
           ],
           "text": "-"
-        }
-      },
-      {
-        "box": {
-          "id": "obj-status-label",
-          "maxclass": "comment",
-          "numinlets": 1,
-          "numoutlets": 0,
-          "patching_rect": [
-            540.0,
-            240.0,
-            52.0,
-            20.0
-          ],
-          "presentation": 1,
-          "presentation_rect": [
-            248.0,
-            64.0,
-            52.0,
-            18.0
-          ],
-          "text": "Status"
         }
       }
     ],
@@ -754,18 +707,6 @@
           "destination": [
             "obj-route-status",
             0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-route-status",
-            0
-          ],
-          "destination": [
-            "obj-status-display",
-            1
           ]
         }
       },
@@ -1013,9 +954,9 @@
     "openrect": [
       0.0,
       0.0,
-      500.0,
-      92.0
+      330.0,
+      42.0
     ],
-    "devicewidth": 500.0
+    "devicewidth": 330.0
   }
 }

@@ -148,16 +148,15 @@ function handleLiveScaleMode(value) {
 }
 
 function status() {
-  if (liveScaleMode) {
-    outlet(0, ["status", "Scale Mode enabled"]);
-  } else {
-    outlet(0, ["status", "Enable Scale Mode to use this"]);
-  }
   scaleinfo();
 }
 
 function scaleinfo() {
-  outlet(0, ["scaleinfo", noteName(rootNote) + " " + displayScaleName(scaleName)]);
+  if (liveScaleMode) {
+    outlet(0, ["scaleinfo", noteName(rootNote) + " " + displayScaleName(scaleName)]);
+  } else {
+    outlet(0, ["scaleinfo", "Enable Scale Mode"]);
+  }
 }
 
 function list() {
@@ -181,7 +180,7 @@ function list() {
   }
 
   if (!liveScaleMode) {
-    outlet(0, ["status", "Enable Scale Mode to use this"]);
+    scaleinfo();
     return;
   }
 

@@ -9,7 +9,7 @@ Max for Live MIDI effect that maps only the white keys of a MIDI keyboard to a s
 - The selected scale changes the interval pattern.
 - Black keys are ignored.
 - Note-off messages are paired with their remapped note-on messages, so sustained notes release correctly.
-- The device shows the current scale, plus the most recent input and output key.
+- The device shows `Now`, `In`, and `Out`: the current Live scale, the latest input note, and the mapped output note.
 
 ## Files
 
@@ -24,9 +24,8 @@ Max for Live MIDI effect that maps only the white keys of a MIDI keyboard to a s
 3. Open `white-keys-only.maxpat` in Max.
 4. Save it as a Max for Live MIDI device, usually as `White Keys Only.amxd`.
 5. Put the device before your instrument on the MIDI track.
-6. Set `Root` from `0` to `11`, where `0=C`, `1=C#`, `2=D`, and so on.
-7. Pick a scale.
-8. Play only the white keys.
+6. Enable Live Scale Mode and choose a root and scale.
+7. Play only the white keys.
 
 Keep `White Keys Only.amxd` and `white-keys-only.js` in the same folder. The device uses the JavaScript file for its mapping logic.
 
@@ -34,24 +33,7 @@ Keep `White Keys Only.amxd` and `white-keys-only.js` in the same folder. The dev
 
 Put the device before an instrument on a MIDI track and play a few white keys.
 
-The compact display shows the active scale, the latest input note, and the mapped output note.
-
-## Root Values
-
-| Value | Root |
-| --- | --- |
-| 0 | C |
-| 1 | C# / Db |
-| 2 | D |
-| 3 | D# / Eb |
-| 4 | E |
-| 5 | F |
-| 6 | F# / Gb |
-| 7 | G |
-| 8 | G# / Ab |
-| 9 | A |
-| 10 | A# / Bb |
-| 11 | B |
+The compact display shows the active scale, the latest input note, and the mapped output note. `Now` shows `Enable Scale Mode` when Live Scale Mode is off.
 
 ## Notes
 
