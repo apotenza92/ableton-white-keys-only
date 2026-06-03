@@ -750,8 +750,8 @@
           "mode": 0,
           "parameter_enable": 1,
           "parameter_mappable": 0,
-          "text": "Scale value",
-          "texton": "Scale value",
+          "text": "",
+          "texton": "",
           "annotation_name": "Scale value",
           "annotation": "Current Live Scale Mode root and scale used for white-key mapping.",
           "bgcolor": [
@@ -796,7 +796,49 @@
               "parameter_osc_name": "<default>",
               "parameter_order": 102
             }
-          }
+          },
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "accentcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tricolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -825,8 +867,8 @@
           "mode": 0,
           "parameter_enable": 1,
           "parameter_mappable": 0,
-          "text": "Key input value",
-          "texton": "Key input value",
+          "text": "",
+          "texton": "",
           "annotation_name": "Key input value",
           "annotation": "Most recent MIDI note received. Black keys are shown as ignored.",
           "bgcolor": [
@@ -871,7 +913,49 @@
               "parameter_osc_name": "<default>",
               "parameter_order": 104
             }
-          }
+          },
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "accentcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tricolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -900,8 +984,8 @@
           "mode": 0,
           "parameter_enable": 1,
           "parameter_mappable": 0,
-          "text": "Key output value",
-          "texton": "Key output value",
+          "text": "",
+          "texton": "",
           "annotation_name": "Key output value",
           "annotation": "Mapped MIDI note sent to the instrument. Ignored black-key inputs show the same ignored note here.",
           "bgcolor": [
@@ -946,7 +1030,49 @@
               "parameter_osc_name": "<default>",
               "parameter_order": 106
             }
-          }
+          },
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "accentcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tricolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -993,8 +1119,8 @@
           "mode": 0,
           "parameter_enable": 1,
           "parameter_mappable": 0,
-          "text": "Scale",
-          "texton": "Scale",
+          "text": "",
+          "texton": "",
           "annotation_name": "Scale",
           "annotation": "Shows whether Live Scale Mode is active and which scale is currently used.",
           "bgcolor": [
@@ -1039,7 +1165,49 @@
               "parameter_osc_name": "<default>",
               "parameter_order": 101
             }
-          }
+          },
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "accentcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tricolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -1068,8 +1236,8 @@
           "mode": 0,
           "parameter_enable": 1,
           "parameter_mappable": 0,
-          "text": "Key input",
-          "texton": "Key input",
+          "text": "",
+          "texton": "",
           "annotation_name": "Key input",
           "annotation": "Shows the most recent MIDI note received by the device.",
           "bgcolor": [
@@ -1114,7 +1282,49 @@
               "parameter_osc_name": "<default>",
               "parameter_order": 103
             }
-          }
+          },
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "accentcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tricolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -1143,8 +1353,8 @@
           "mode": 0,
           "parameter_enable": 1,
           "parameter_mappable": 0,
-          "text": "Key output",
-          "texton": "Key output",
+          "text": "",
+          "texton": "",
           "annotation_name": "Key output",
           "annotation": "Shows the mapped MIDI note sent from this device.",
           "bgcolor": [
@@ -1189,7 +1399,49 @@
               "parameter_osc_name": "<default>",
               "parameter_order": 105
             }
-          }
+          },
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "accentcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tricolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       }
     ],
