@@ -1023,6 +1023,24 @@
             }
           }
         }
+      },
+      {
+        "box": {
+          "id": "obj-note-format-pack",
+          "maxclass": "newobj",
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            60.0,
+            305.0,
+            58.0,
+            22.0
+          ],
+          "text": "pack 0 0"
+        }
       }
     ],
     "lines": [
@@ -1047,42 +1065,6 @@
           "destination": [
             "obj-js",
             0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-unpack",
-            0
-          ],
-          "destination": [
-            "obj-midiformat",
-            0
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-unpack",
-            1
-          ],
-          "destination": [
-            "obj-midiformat",
-            1
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-unpack",
-            2
-          ],
-          "destination": [
-            "obj-midiformat",
-            2
           ]
         }
       },
@@ -1371,6 +1353,54 @@
           "destination": [
             "obj-pack",
             1
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-unpack",
+            0
+          ],
+          "destination": [
+            "obj-note-format-pack",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-unpack",
+            1
+          ],
+          "destination": [
+            "obj-note-format-pack",
+            1
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-note-format-pack",
+            0
+          ],
+          "destination": [
+            "obj-midiformat",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-unpack",
+            2
+          ],
+          "destination": [
+            "obj-midiformat",
+            6
           ]
         }
       }
