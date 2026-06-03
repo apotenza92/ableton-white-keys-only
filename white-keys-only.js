@@ -153,9 +153,9 @@ function status() {
 
 function scaleinfo() {
   if (liveScaleMode) {
-    outlet(0, ["scaleinfo", noteName(rootNote) + "-" + displayScaleName(scaleName)]);
+    outlet(0, ["scaleinfo", noteName(rootNote)].concat(displayScaleName(scaleName)));
   } else {
-    outlet(0, ["scaleinfo", "Enable-Scale-Mode"]);
+    outlet(0, ["scaleinfo", "Enable", "Scale", "Mode"]);
   }
 }
 
@@ -246,7 +246,7 @@ function noteNameWithOctave(value) {
 }
 
 function displayScaleName(value) {
-  return String(value).replace(/[\s_]+/g, "-");
+  return String(value).replace(/_/g, " ").split(/\s+/);
 }
 
 function firstNumber(value) {
