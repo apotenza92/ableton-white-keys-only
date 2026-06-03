@@ -138,6 +138,9 @@ handleLiveScaleIntervals([0, 1, 4, 5, 7, 8, 11]);
 list(64, 100, 1);
 list(64, 0, 1);
 list(61, 100, 1);
+handleLiveScaleMode(0);
+list(61, 90, 1);
+list(61, 0, 1);
 `);
 
   const normalisedEvents = events.map((event) => ({
@@ -172,6 +175,30 @@ list(61, 100, 1);
     )
   ) {
     throw new Error("JS did not mirror ignored black-key output");
+  }
+
+  if (!midiEvents.some((event) => JSON.stringify(event.args) === "[61,90,1]")) {
+    throw new Error("JS did not pass note-on through unchanged when Scale Mode is off");
+  }
+
+  if (!midiEvents.some((event) => JSON.stringify(event.args) === "[61,0,1]")) {
+    throw new Error("JS did not pass note-off through unchanged when Scale Mode is off");
+  }
+
+  if (
+    !normalisedEvents.some(
+      (event) => event.index === 1 && event.args.join(" ") === "inputkey Disabled",
+    )
+  ) {
+    throw new Error("JS did not show disabled input when Scale Mode is off");
+  }
+
+  if (
+    !normalisedEvents.some(
+      (event) => event.index === 1 && event.args.join(" ") === "outputkey Disabled",
+    )
+  ) {
+    throw new Error("JS did not show disabled output when Scale Mode is off");
   }
 }
 

@@ -143,13 +143,20 @@ function handleLiveScaleIntervals(value) {
 function handleLiveScaleMode(value) {
   var parsed = firstNumber(value);
   if (parsed !== null) {
+    var wasEnabled = liveScaleMode;
     liveScaleMode = parsed ? 1 : 0;
+    if (wasEnabled && !liveScaleMode) {
+      activeNotes = {};
+    }
     status();
   }
 }
 
 function status() {
   scaleinfo();
+  if (!liveScaleMode) {
+    disabledKeyInfo();
+  }
 }
 
 function scaleinfo() {
@@ -171,17 +178,18 @@ function list() {
   var channel = args.length > 2 ? Math.floor(args[2]) : 1;
   var key = channel + ":" + inputPitch;
 
+  if (!liveScaleMode) {
+    disabledKeyInfo();
+    outlet(0, [inputPitch, velocity, channel]);
+    return;
+  }
+
   if (velocity <= 0) {
     var mappedOff = activeNotes[key];
     if (mappedOff !== undefined) {
       delete activeNotes[key];
       outlet(0, [mappedOff, 0, channel]);
     }
-    return;
-  }
-
-  if (!liveScaleMode) {
-    scaleinfo();
     return;
   }
 
@@ -197,6 +205,11 @@ function list() {
   outlet(1, ["inputkey", noteNameWithOctave(inputPitch)]);
   outlet(1, ["outputkey", noteNameWithOctave(mappedPitch)]);
   outlet(0, [mappedPitch, velocity, channel]);
+}
+
+function disabledKeyInfo() {
+  outlet(1, ["inputkey", "Disabled"]);
+  outlet(1, ["outputkey", "Disabled"]);
 }
 
 function allnotesoff() {
