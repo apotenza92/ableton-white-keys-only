@@ -90,6 +90,37 @@ function validatePatch(patch, label) {
       throw new Error(`${label}: MIDI velocity/channel is wired to the wrong midiformat inlet`);
     }
   }
+
+  for (const id of [
+    "obj-scale-label-hover",
+    "obj-scale-info-hover",
+    "obj-input-label-hover",
+    "obj-input-key-hover",
+    "obj-output-label-hover",
+    "obj-output-key-hover",
+  ]) {
+    const box = boxes[id];
+    if (!box) {
+      throw new Error(`${label}: missing Info View target ${id}`);
+    }
+    if (box.maxclass !== "live.text" || box.parameter_enable !== 1) {
+      throw new Error(`${label}: ${id} must be a parameter-enabled live.text`);
+    }
+    if (box.ignoreclick) {
+      throw new Error(`${label}: ${id} cannot ignore mouse events or Live Info View will not see it`);
+    }
+
+    const attrs = box.saved_attribute_attributes?.valueof || {};
+    if (attrs.parameter_mappable !== 0 || box.parameter_mappable !== 0) {
+      throw new Error(`${label}: ${id} must remain non-mappable`);
+    }
+    if (attrs.parameter_invisible !== 0) {
+      throw new Error(`${label}: ${id} must not be hidden from Live Info View`);
+    }
+    if (!attrs.parameter_annotation_name || !attrs.parameter_info) {
+      throw new Error(`${label}: ${id} is missing Info View title/text metadata`);
+    }
+  }
 }
 
 function validateJsMidiOutput() {
