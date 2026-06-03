@@ -12,8 +12,8 @@
     "rect": [
       100.0,
       100.0,
-      560.0,
-      260.0
+      420.0,
+      300.0
     ],
     "bglocked": 0,
     "openinpresentation": 1,
@@ -510,11 +510,11 @@
           "presentation": 1,
           "presentation_rect": [
             8.0,
-            8.0,
-            32.0,
+            6.0,
+            150.0,
             18.0
           ],
-          "text": "Now"
+          "text": "Scale"
         }
       },
       {
@@ -534,9 +534,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            42.0,
-            6.0,
-            116.0,
+            8.0,
+            24.0,
+            150.0,
             22.0
           ],
           "text": "C major"
@@ -556,12 +556,12 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            168.0,
             8.0,
-            18.0,
+            52.0,
+            150.0,
             18.0
           ],
-          "text": "In"
+          "text": "Key input"
         }
       },
       {
@@ -581,9 +581,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            190.0,
-            6.0,
-            50.0,
+            8.0,
+            70.0,
+            150.0,
             22.0
           ],
           "text": "-"
@@ -603,12 +603,12 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            250.0,
             8.0,
-            24.0,
+            98.0,
+            150.0,
             18.0
           ],
-          "text": "Out"
+          "text": "Key output"
         }
       },
       {
@@ -628,9 +628,9 @@
           ],
           "presentation": 1,
           "presentation_rect": [
-            278.0,
-            6.0,
-            50.0,
+            8.0,
+            116.0,
+            150.0,
             22.0
           ],
           "text": "-"
@@ -954,9 +954,9 @@
     "openrect": [
       0.0,
       0.0,
-      330.0,
-      42.0
+      166.0,
+      146.0
     ],
-    "devicewidth": 330.0
+    "devicewidth": 166.0
   }
 }
