@@ -516,7 +516,24 @@
           ],
           "text": "Scale",
           "annotation_name": "Scale",
-          "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable-Scale-Mode when Scale Mode is off."
+          "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
+          "parameter_enable": 1,
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Scale",
+              "parameter_shortname": "Scale",
+              "parameter_type": 2,
+              "parameter_invisible": 1,
+              "parameter_annotation_name": "Scale",
+              "parameter_info": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
+              "parameter_order": 1,
+              "parameter_mmax": 1.0,
+              "parameter_enum": [
+                "off",
+                "on"
+              ]
+            }
+          }
         }
       },
       {
@@ -542,8 +559,25 @@
             22.0
           ],
           "text": "C major",
-          "annotation_name": "Scale value",
-          "annotation": "The current Live Scale Mode root and scale used for white-key mapping."
+          "annotation_name": "Scale",
+          "annotation": "Current Live Scale Mode root and scale used for white-key mapping.",
+          "parameter_enable": 1,
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Scale",
+              "parameter_shortname": "Scale",
+              "parameter_type": 2,
+              "parameter_invisible": 1,
+              "parameter_annotation_name": "Scale",
+              "parameter_info": "Current Live Scale Mode root and scale used for white-key mapping.",
+              "parameter_order": 2,
+              "parameter_mmax": 1.0,
+              "parameter_enum": [
+                "off",
+                "on"
+              ]
+            }
+          }
         }
       },
       {
@@ -567,7 +601,24 @@
           ],
           "text": "Key input",
           "annotation_name": "Key input",
-          "annotation": "Shows the most recent MIDI note received by the device."
+          "annotation": "Shows the most recent MIDI note received by the device.",
+          "parameter_enable": 1,
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Key input",
+              "parameter_shortname": "Key input",
+              "parameter_type": 2,
+              "parameter_invisible": 1,
+              "parameter_annotation_name": "Key input",
+              "parameter_info": "Shows the most recent MIDI note received by the device.",
+              "parameter_order": 3,
+              "parameter_mmax": 1.0,
+              "parameter_enum": [
+                "off",
+                "on"
+              ]
+            }
+          }
         }
       },
       {
@@ -593,8 +644,25 @@
             22.0
           ],
           "text": "-",
-          "annotation_name": "Key input value",
-          "annotation": "The most recent MIDI note received. Black keys are shown as ignored."
+          "annotation_name": "Key input",
+          "annotation": "Most recent MIDI note received. Black keys are shown as ignored.",
+          "parameter_enable": 1,
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Key input",
+              "parameter_shortname": "Key input",
+              "parameter_type": 2,
+              "parameter_invisible": 1,
+              "parameter_annotation_name": "Key input",
+              "parameter_info": "Most recent MIDI note received. Black keys are shown as ignored.",
+              "parameter_order": 4,
+              "parameter_mmax": 1.0,
+              "parameter_enum": [
+                "off",
+                "on"
+              ]
+            }
+          }
         }
       },
       {
@@ -618,7 +686,24 @@
           ],
           "text": "Key output",
           "annotation_name": "Key output",
-          "annotation": "Shows the note sent after mapping the white key into the current scale."
+          "annotation": "Shows the note sent after mapping the white key into the current scale.",
+          "parameter_enable": 1,
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Key output",
+              "parameter_shortname": "Key output",
+              "parameter_type": 2,
+              "parameter_invisible": 1,
+              "parameter_annotation_name": "Key output",
+              "parameter_info": "Shows the note sent after mapping the white key into the current scale.",
+              "parameter_order": 5,
+              "parameter_mmax": 1.0,
+              "parameter_enum": [
+                "off",
+                "on"
+              ]
+            }
+          }
         }
       },
       {
@@ -644,8 +729,25 @@
             22.0
           ],
           "text": "-",
-          "annotation_name": "Key output value",
-          "annotation": "The mapped MIDI note sent to the instrument, or - when the input note is ignored."
+          "annotation_name": "Key output",
+          "annotation": "Mapped MIDI note sent to the instrument, or - when the input note is ignored.",
+          "parameter_enable": 1,
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Key output",
+              "parameter_shortname": "Key output",
+              "parameter_type": 2,
+              "parameter_invisible": 1,
+              "parameter_annotation_name": "Key output",
+              "parameter_info": "Mapped MIDI note sent to the instrument, or - when the input note is ignored.",
+              "parameter_order": 6,
+              "parameter_mmax": 1.0,
+              "parameter_enum": [
+                "off",
+                "on"
+              ]
+            }
+          }
         }
       }
     ],
@@ -969,6 +1071,8 @@
       190.0,
       146.0
     ],
-    "devicewidth": 190.0
+    "devicewidth": 190.0,
+    "description": "",
+    "digest": ""
   }
 }
