@@ -498,9 +498,9 @@
       {
         "box": {
           "id": "obj-scale-info-label",
-          "maxclass": "live.comment",
+          "maxclass": "live.text",
           "numinlets": 1,
-          "numoutlets": 0,
+          "numoutlets": 2,
           "patching_rect": [
             320.0,
             270.0,
@@ -517,7 +517,34 @@
           "text": "Scale",
           "annotation_name": "Scale",
           "annotation": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
-          "parameter_enable": 0
+          "parameter_enable": 1,
+          "mode": 0,
+          "ignoreclick": 1,
+          "parameter_mappable": 0,
+          "outlettype": [
+            "",
+            ""
+          ],
+          "texton": "Scale",
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Scale",
+              "parameter_shortname": "Scale",
+              "parameter_type": 2,
+              "parameter_mmax": 1,
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_invisible": 2,
+              "parameter_mappable": 0,
+              "parameter_annotation_name": "Scale",
+              "parameter_info": "Shows the current Live Scale Mode root and scale. Displays Enable Scale Mode when Scale Mode is off.",
+              "parameter_order": 1,
+              "parameter_modmode": 0,
+              "parameter_osc_name": "<default>"
+            }
+          }
         }
       },
       {
@@ -540,7 +567,7 @@
             22.0
           ],
           "text": "C major",
-          "annotation_name": "Scale",
+          "annotation_name": "Scale value",
           "annotation": "Current Live Scale Mode root and scale used for white-key mapping.",
           "parameter_enable": 0,
           "textjustification": 0,
@@ -561,9 +588,9 @@
       {
         "box": {
           "id": "obj-input-key-label",
-          "maxclass": "live.comment",
+          "maxclass": "live.text",
           "numinlets": 1,
-          "numoutlets": 0,
+          "numoutlets": 2,
           "patching_rect": [
             320.0,
             330.0,
@@ -580,7 +607,34 @@
           "text": "Key input",
           "annotation_name": "Key input",
           "annotation": "Shows the most recent MIDI note received by the device.",
-          "parameter_enable": 0
+          "parameter_enable": 1,
+          "mode": 0,
+          "ignoreclick": 1,
+          "parameter_mappable": 0,
+          "outlettype": [
+            "",
+            ""
+          ],
+          "texton": "Key input",
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Key input",
+              "parameter_shortname": "Key input",
+              "parameter_type": 2,
+              "parameter_mmax": 1,
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_invisible": 2,
+              "parameter_mappable": 0,
+              "parameter_annotation_name": "Key input",
+              "parameter_info": "Shows the most recent MIDI note received by the device.",
+              "parameter_order": 2,
+              "parameter_modmode": 0,
+              "parameter_osc_name": "<default>"
+            }
+          }
         }
       },
       {
@@ -603,7 +657,7 @@
             22.0
           ],
           "text": "-",
-          "annotation_name": "Key input",
+          "annotation_name": "Key input value",
           "annotation": "Most recent MIDI note received. Black keys are shown as ignored.",
           "parameter_enable": 0,
           "textjustification": 0,
@@ -624,9 +678,9 @@
       {
         "box": {
           "id": "obj-output-key-label",
-          "maxclass": "live.comment",
+          "maxclass": "live.text",
           "numinlets": 1,
-          "numoutlets": 0,
+          "numoutlets": 2,
           "patching_rect": [
             430.0,
             330.0,
@@ -643,7 +697,34 @@
           "text": "Key output",
           "annotation_name": "Key output",
           "annotation": "Shows the note sent after mapping the white key into the current scale.",
-          "parameter_enable": 0
+          "parameter_enable": 1,
+          "mode": 0,
+          "ignoreclick": 1,
+          "parameter_mappable": 0,
+          "outlettype": [
+            "",
+            ""
+          ],
+          "texton": "Key output",
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Key output",
+              "parameter_shortname": "Key output",
+              "parameter_type": 2,
+              "parameter_mmax": 1,
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_invisible": 2,
+              "parameter_mappable": 0,
+              "parameter_annotation_name": "Key output",
+              "parameter_info": "Shows the note sent after mapping the white key into the current scale.",
+              "parameter_order": 3,
+              "parameter_modmode": 0,
+              "parameter_osc_name": "<default>"
+            }
+          }
         }
       },
       {
@@ -666,8 +747,8 @@
             22.0
           ],
           "text": "-",
-          "annotation_name": "Key output",
-          "annotation": "Shows the note sent after mapping the white key into the current scale.",
+          "annotation_name": "Key output value",
+          "annotation": "Mapped MIDI note sent to the instrument.",
           "parameter_enable": 0,
           "textjustification": 0,
           "textcolor": [
@@ -755,6 +836,306 @@
             22.0
           ],
           "text": "unpack 0 0"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-scale-info-hover",
+          "maxclass": "live.text",
+          "numinlets": 1,
+          "numoutlets": 2,
+          "outlettype": [
+            "",
+            ""
+          ],
+          "patching_rect": [
+            320.0,
+            295.0,
+            160.0,
+            22.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            8.0,
+            24.0,
+            157.0,
+            22.0
+          ],
+          "mode": 0,
+          "ignoreclick": 1,
+          "parameter_enable": 1,
+          "parameter_mappable": 0,
+          "text": "",
+          "texton": "",
+          "annotation_name": "Scale value",
+          "annotation": "Current Live Scale Mode root and scale used for white-key mapping.",
+          "bgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Scale value",
+              "parameter_shortname": "Scale value",
+              "parameter_type": 2,
+              "parameter_mmax": 1,
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_invisible": 2,
+              "parameter_mappable": 0,
+              "parameter_annotation_name": "Scale value",
+              "parameter_info": "Current Live Scale Mode root and scale used for white-key mapping.",
+              "parameter_order": 11,
+              "parameter_modmode": 0,
+              "parameter_osc_name": "<default>"
+            }
+          }
+        }
+      },
+      {
+        "box": {
+          "id": "obj-input-key-hover",
+          "maxclass": "live.text",
+          "numinlets": 1,
+          "numoutlets": 2,
+          "outlettype": [
+            "",
+            ""
+          ],
+          "patching_rect": [
+            320.0,
+            355.0,
+            80.0,
+            22.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            8.0,
+            70.0,
+            157.0,
+            22.0
+          ],
+          "mode": 0,
+          "ignoreclick": 1,
+          "parameter_enable": 1,
+          "parameter_mappable": 0,
+          "text": "",
+          "texton": "",
+          "annotation_name": "Key input value",
+          "annotation": "Most recent MIDI note received. Black keys are shown as ignored.",
+          "bgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Key input value",
+              "parameter_shortname": "Key input value",
+              "parameter_type": 2,
+              "parameter_mmax": 1,
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_invisible": 2,
+              "parameter_mappable": 0,
+              "parameter_annotation_name": "Key input value",
+              "parameter_info": "Most recent MIDI note received. Black keys are shown as ignored.",
+              "parameter_order": 12,
+              "parameter_modmode": 0,
+              "parameter_osc_name": "<default>"
+            }
+          }
+        }
+      },
+      {
+        "box": {
+          "id": "obj-output-key-hover",
+          "maxclass": "live.text",
+          "numinlets": 1,
+          "numoutlets": 2,
+          "outlettype": [
+            "",
+            ""
+          ],
+          "patching_rect": [
+            430.0,
+            355.0,
+            80.0,
+            22.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            8.0,
+            116.0,
+            157.0,
+            22.0
+          ],
+          "mode": 0,
+          "ignoreclick": 1,
+          "parameter_enable": 1,
+          "parameter_mappable": 0,
+          "text": "",
+          "texton": "",
+          "annotation_name": "Key output value",
+          "annotation": "Mapped MIDI note sent to the instrument.",
+          "bgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activebgoncolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "focusbordercolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "activetextcolor": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Key output value",
+              "parameter_shortname": "Key output value",
+              "parameter_type": 2,
+              "parameter_mmax": 1,
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_invisible": 2,
+              "parameter_mappable": 0,
+              "parameter_annotation_name": "Key output value",
+              "parameter_info": "Mapped MIDI note sent to the instrument.",
+              "parameter_order": 13,
+              "parameter_modmode": 0,
+              "parameter_osc_name": "<default>"
+            }
+          }
         }
       }
     ],
