@@ -131,18 +131,21 @@
           "id": "obj-route-status",
           "maxclass": "newobj",
           "numinlets": 1,
-          "numoutlets": 2,
+          "numoutlets": 5,
           "outlettype": [
+            "",
+            "",
+            "",
             "",
             ""
           ],
           "patching_rect": [
             60.0,
             240.0,
-            90.0,
+            230.0,
             22.0
           ],
-          "text": "route status"
+          "text": "route status scaleinfo inputkey outputkey"
         }
       },
       {
@@ -155,9 +158,9 @@
             ""
           ],
           "patching_rect": [
+            320.0,
             240.0,
-            270.0,
-            210.0,
+            220.0,
             22.0
           ],
           "presentation": 1,
@@ -650,6 +653,147 @@
           ],
           "text": "pitch / velocity"
         }
+      },
+      {
+        "box": {
+          "id": "obj-scale-info-label",
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
+          "patching_rect": [
+            320.0,
+            270.0,
+            140.0,
+            20.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            386.0,
+            76.0,
+            140.0,
+            20.0
+          ],
+          "text": "Current scale"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-scale-info-display",
+          "maxclass": "message",
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            320.0,
+            295.0,
+            180.0,
+            22.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            386.0,
+            98.0,
+            180.0,
+            22.0
+          ],
+          "text": "C major"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-input-key-label",
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
+          "patching_rect": [
+            320.0,
+            330.0,
+            100.0,
+            20.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            386.0,
+            176.0,
+            100.0,
+            20.0
+          ],
+          "text": "Input key"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-input-key-display",
+          "maxclass": "message",
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            320.0,
+            355.0,
+            80.0,
+            22.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            386.0,
+            198.0,
+            80.0,
+            22.0
+          ],
+          "text": "-"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-output-key-label",
+          "maxclass": "comment",
+          "numinlets": 1,
+          "numoutlets": 0,
+          "patching_rect": [
+            430.0,
+            330.0,
+            100.0,
+            20.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            484.0,
+            176.0,
+            100.0,
+            20.0
+          ],
+          "text": "Output key"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-output-key-display",
+          "maxclass": "message",
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            430.0,
+            355.0,
+            80.0,
+            22.0
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            484.0,
+            198.0,
+            80.0,
+            22.0
+          ],
+          "text": "-"
+        }
       }
     ],
     "lines": [
@@ -734,18 +878,6 @@
           "destination": [
             "obj-status-display",
             1
-          ]
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "obj-route-status",
-            1
-          ],
-          "destination": [
-            "obj-unpack",
-            0
           ]
         }
       },
@@ -985,6 +1117,54 @@
           ],
           "destination": [
             "obj-output-velocity",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-route-status",
+            1
+          ],
+          "destination": [
+            "obj-scale-info-display",
+            1
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-route-status",
+            2
+          ],
+          "destination": [
+            "obj-input-key-display",
+            1
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-route-status",
+            3
+          ],
+          "destination": [
+            "obj-output-key-display",
+            1
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-route-status",
+            4
+          ],
+          "destination": [
+            "obj-unpack",
             0
           ]
         }

@@ -48,19 +48,24 @@ var SCALE_ORDER = [
   "minor_pentatonic"
 ];
 
+var NOTE_NAMES = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"];
+
 function root(value) {
   rootNote = clamp(Math.floor(value), 0, 11);
+  scaleinfo();
 }
 
 function scale(value) {
   if (typeof value === "number") {
     scaleName = SCALE_ORDER[clamp(Math.floor(value), 0, SCALE_ORDER.length - 1)];
+    scaleinfo();
     return;
   }
 
   var normalised = String(value).toLowerCase().replace(/[\s-]+/g, "_");
   if (SCALES[normalised]) {
     scaleName = normalised;
+    scaleinfo();
   }
 }
 
@@ -113,6 +118,7 @@ function handleLiveRootNote(value) {
   var parsed = firstNumber(value);
   if (parsed !== null) {
     rootNote = clamp(parsed, 0, 11);
+    scaleinfo();
   }
 }
 
@@ -120,6 +126,7 @@ function handleLiveScaleName(value) {
   var parsed = firstString(value);
   if (parsed) {
     scale(parsed);
+    scaleinfo();
   }
 }
 
@@ -146,6 +153,11 @@ function status() {
   } else {
     outlet(0, ["status", "Enable Scale Mode to use this"]);
   }
+  scaleinfo();
+}
+
+function scaleinfo() {
+  outlet(0, ["scaleinfo", noteName(rootNote) + " " + displayScaleName(scaleName)]);
 }
 
 function list() {
@@ -175,10 +187,14 @@ function list() {
 
   var mappedPitch = mapPitch(inputPitch);
   if (mappedPitch === null) {
+    outlet(0, ["inputkey", noteName(inputPitch) + " ignored"]);
+    outlet(0, ["outputkey", "-"]);
     return;
   }
 
   activeNotes[key] = mappedPitch;
+  outlet(0, ["inputkey", noteNameWithOctave(inputPitch)]);
+  outlet(0, ["outputkey", noteNameWithOctave(mappedPitch)]);
   outlet(0, [mappedPitch, velocity, channel]);
 }
 
@@ -219,6 +235,19 @@ function positiveModulo(value, divisor) {
 
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
+}
+
+function noteName(value) {
+  return NOTE_NAMES[positiveModulo(Math.floor(value), 12)];
+}
+
+function noteNameWithOctave(value) {
+  var pitch = clamp(Math.floor(value), 0, 127);
+  return noteName(pitch) + String(Math.floor(pitch / 12) - 1);
+}
+
+function displayScaleName(value) {
+  return String(value).replace(/_/g, " ");
 }
 
 function firstNumber(value) {

@@ -9,6 +9,7 @@ Max for Live MIDI effect that maps only the white keys of a MIDI keyboard to a s
 - The selected scale changes the interval pattern.
 - Black keys are ignored.
 - Note-off messages are paired with their remapped note-on messages, so sustained notes release correctly.
+- The device shows the current scale, plus the most recent input and output key.
 
 ## Files
 
