@@ -75,6 +75,8 @@ function validatePatch(patch, label) {
   assertLine(patch, "obj-note-unpack", 0, "obj-pack", 0);
   assertLine(patch, "obj-note-unpack", 1, "obj-pack", 1);
   assertLine(patch, "obj-pack", 0, "obj-js", 0);
+  assertLine(patch, "obj-chord-mode", 0, "obj-chord-mode-message", 0);
+  assertLine(patch, "obj-chord-mode-message", 0, "obj-js", 0);
 
   assertLine(patch, "obj-js", 0, "obj-unpack", 0);
   assertLine(patch, "obj-unpack", 0, "obj-note-format-pack", 0);
@@ -121,6 +123,14 @@ function validatePatch(patch, label) {
       throw new Error(`${label}: ${id} is missing Info View title/text metadata`);
     }
   }
+
+  if (!boxes["obj-chord-mode"] || boxes["obj-chord-mode"].maxclass !== "toggle") {
+    throw new Error(`${label}: missing Chord Mode toggle`);
+  }
+
+  if (boxes["obj-chord-mode-message"]?.text !== "chordmode $1") {
+    throw new Error(`${label}: Chord Mode must send chordmode $1 to JS`);
+  }
 }
 
 function validateJsMidiOutput() {
@@ -142,6 +152,11 @@ handleLiveScaleMode(0);
 list(61, 90, 1);
 list(61, 0, 1);
 handleLiveScaleMode(1);
+chordmode(1);
+list(60, 100, 1);
+list(62, 100, 1);
+list(60, 0, 1);
+list(62, 0, 1);
 `);
 
   const normalisedEvents = events.map((event) => ({
@@ -212,6 +227,39 @@ handleLiveScaleMode(1);
     !normalisedEvents.some((event) => event.index === 1 && event.args.join(" ") === "outputkey -")
   ) {
     throw new Error("JS did not clear output when Scale Mode is re-enabled");
+  }
+
+  for (const args of ["[60,100,1]", "[64,100,1]", "[67,100,1]", "[60,0,1]", "[64,0,1]", "[67,0,1]"]) {
+    if (!midiEvents.some((event) => JSON.stringify(event.args) === args)) {
+      throw new Error(`JS did not emit expected chord MIDI event ${args}`);
+    }
+  }
+
+  if (
+    !normalisedEvents.some(
+      (event) => event.index === 1 && event.args.join(" ") === "outputkey I (C) C-E-G",
+    )
+  ) {
+    throw new Error("JS did not display the chord numeral and notes");
+  }
+
+  const chordModeMidi = midiEvents
+    .map((event) => event.args.join(","))
+    .slice(midiEvents.findIndex((event) => event.args.join(",") === "60,100,1"));
+  const expectedChordModeStart = [
+    "60,100,1",
+    "64,100,1",
+    "67,100,1",
+    "60,0,1",
+    "64,0,1",
+    "67,0,1",
+    "61,100,1",
+    "65,100,1",
+    "68,100,1",
+  ];
+
+  if (expectedChordModeStart.some((args, index) => chordModeMidi[index] !== args)) {
+    throw new Error("JS did not turn off the held chord before starting a new chord");
   }
 }
 

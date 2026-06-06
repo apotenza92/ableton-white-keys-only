@@ -10,20 +10,20 @@
     },
     "classnamespace": "box",
     "rect": [
-      100.0,
-      100.0,
-      420.0,
-      300.0
+      100,
+      100,
+      420,
+      300
     ],
     "bglocked": 0,
     "openinpresentation": 1,
-    "default_fontsize": 12.0,
+    "default_fontsize": 12,
     "default_fontface": 0,
     "default_fontname": "Arial",
     "gridonopen": 1,
     "gridsize": [
-      15.0,
-      15.0
+      15,
+      15
     ],
     "objectsnaponopen": 1,
     "boxes": [
@@ -37,10 +37,10 @@
             ""
           ],
           "patching_rect": [
-            60.0,
-            80.0,
-            54.0,
-            22.0
+            60,
+            80,
+            54,
+            22
           ],
           "text": "midiin"
         }
@@ -62,10 +62,10 @@
             ""
           ],
           "patching_rect": [
-            60.0,
-            105.0,
-            120.0,
-            22.0
+            60,
+            105,
+            120,
+            22
           ],
           "text": "midiparse"
         }
@@ -80,10 +80,10 @@
             ""
           ],
           "patching_rect": [
-            60.0,
-            150.0,
-            78.0,
-            22.0
+            60,
+            150,
+            78,
+            22
           ],
           "text": "pack 0 0 1"
         }
@@ -99,10 +99,10 @@
             ""
           ],
           "patching_rect": [
-            60.0,
-            205.0,
-            145.0,
-            22.0
+            60,
+            205,
+            145,
+            22
           ],
           "text": "js white-keys-only.js"
         }
@@ -119,10 +119,10 @@
             "int"
           ],
           "patching_rect": [
-            60.0,
-            270.0,
-            86.0,
-            22.0
+            60,
+            270,
+            86,
+            22
           ],
           "text": "unpack 0 0 1"
         }
@@ -140,10 +140,10 @@
             ""
           ],
           "patching_rect": [
-            220.0,
-            240.0,
-            190.0,
-            22.0
+            220,
+            240,
+            190,
+            22
           ],
           "text": "route scaleinfo inputkey outputkey"
         }
@@ -159,10 +159,10 @@
             ""
           ],
           "patching_rect": [
-            60.0,
-            335.0,
-            86.0,
-            22.0
+            60,
+            335,
+            86,
+            22
           ],
           "text": "midiformat"
         }
@@ -174,10 +174,10 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            60.0,
-            390.0,
-            58.0,
-            22.0
+            60,
+            390,
+            58,
+            22
           ],
           "text": "midiout"
         }
@@ -189,18 +189,18 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            300.0,
-            72.0,
-            120.0,
-            20.0
+            300,
+            72,
+            120,
+            20
           ],
           "text": "Root",
           "presentation": 0,
           "presentation_rect": [
-            12.0,
-            10.0,
-            34.0,
-            18.0
+            12,
+            10,
+            34,
+            18
           ]
         }
       },
@@ -216,23 +216,23 @@
           ],
           "parameter_enable": 1,
           "patching_rect": [
-            300.0,
-            100.0,
-            70.0,
-            22.0
+            300,
+            100,
+            70,
+            22
           ],
           "presentation": 0,
           "presentation_rect": [
-            50.0,
-            8.0,
-            54.0,
-            22.0
+            50,
+            8,
+            54,
+            22
           ],
           "saved_attribute_attributes": {
             "valueof": {
               "parameter_longname": "Root",
-              "parameter_mmin": 0.0,
-              "parameter_mmax": 11.0,
+              "parameter_mmin": 0,
+              "parameter_mmax": 11,
               "parameter_type": 1,
               "parameter_unitstyle": 0
             }
@@ -250,10 +250,10 @@
             ""
           ],
           "patching_rect": [
-            300.0,
-            145.0,
-            58.0,
-            22.0
+            300,
+            145,
+            58,
+            22
           ],
           "text": "root $1"
         }
@@ -265,18 +265,18 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            470.0,
-            72.0,
-            120.0,
-            20.0
+            470,
+            72,
+            120,
+            20
           ],
           "text": "Scale",
           "presentation": 0,
           "presentation_rect": [
-            114.0,
-            10.0,
-            36.0,
-            18.0
+            114,
+            10,
+            36,
+            18
           ]
         }
       },
@@ -315,17 +315,17 @@
             ""
           ],
           "patching_rect": [
-            470.0,
-            100.0,
-            160.0,
-            22.0
+            470,
+            100,
+            160,
+            22
           ],
           "presentation": 0,
           "presentation_rect": [
-            154.0,
-            8.0,
-            128.0,
-            22.0
+            154,
+            8,
+            128,
+            22
           ]
         }
       },
@@ -339,10 +339,10 @@
             ""
           ],
           "patching_rect": [
-            470.0,
-            145.0,
-            62.0,
-            22.0
+            470,
+            145,
+            62,
+            22
           ],
           "text": "scale $1"
         }
@@ -357,17 +357,17 @@
             "bang"
           ],
           "patching_rect": [
-            300.0,
-            220.0,
-            24.0,
-            24.0
+            300,
+            220,
+            24,
+            24
           ],
           "presentation": 0,
           "presentation_rect": [
-            468.0,
-            8.0,
-            20.0,
-            20.0
+            468,
+            8,
+            20,
+            20
           ]
         }
       },
@@ -378,10 +378,10 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            330.0,
-            220.0,
-            120.0,
-            20.0
+            330,
+            220,
+            120,
+            20
           ],
           "presentation": 0,
           "text": "All notes off"
@@ -397,10 +397,10 @@
             ""
           ],
           "patching_rect": [
-            300.0,
-            260.0,
-            74.0,
-            22.0
+            300,
+            260,
+            74,
+            22
           ],
           "text": "allnotesoff"
         }
@@ -415,10 +415,10 @@
             "bang"
           ],
           "patching_rect": [
-            520.0,
-            220.0,
-            86.0,
-            22.0
+            520,
+            220,
+            86,
+            22
           ],
           "text": "live.thisdevice"
         }
@@ -433,10 +433,10 @@
             ""
           ],
           "patching_rect": [
-            520.0,
-            260.0,
-            52.0,
-            22.0
+            520,
+            260,
+            52,
+            22
           ],
           "text": "initlive"
         }
@@ -451,10 +451,10 @@
             "bang"
           ],
           "patching_rect": [
-            610.0,
-            220.0,
-            78.0,
-            22.0
+            610,
+            220,
+            78,
+            22
           ],
           "text": "metro 500"
         }
@@ -469,10 +469,10 @@
             ""
           ],
           "patching_rect": [
-            610.0,
-            260.0,
-            24.0,
-            22.0
+            610,
+            260,
+            24,
+            22
           ],
           "text": "1"
         }
@@ -487,10 +487,10 @@
             ""
           ],
           "patching_rect": [
-            610.0,
-            300.0,
-            52.0,
-            22.0
+            610,
+            300,
+            52,
+            22
           ],
           "text": "polllive"
         }
@@ -502,23 +502,24 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            320.0,
-            270.0,
-            80.0,
-            20.0
+            320,
+            270,
+            80,
+            20
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            6.0,
-            157.0,
-            18.0
+            8,
+            6,
+            178,
+            18
           ],
           "text": "Scale",
           "annotation_name": "Scale",
           "annotation": "The Live scale currently shaping the white keys. Shows Enable Scale Mode when Live Scale Mode is off.",
           "parameter_enable": 0,
-          "textjustification": 0
+          "textjustification": 0,
+          "fontsize": 12
         }
       },
       {
@@ -528,23 +529,24 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            320.0,
-            295.0,
-            160.0,
-            22.0
+            320,
+            295,
+            160,
+            22
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            24.0,
-            157.0,
-            22.0
+            8,
+            24,
+            178,
+            22
           ],
           "text": "C major",
           "annotation_name": "Scale",
           "annotation": "The Live scale currently shaping the white keys. Shows Enable Scale Mode when Live Scale Mode is off.",
           "parameter_enable": 0,
-          "textjustification": 0
+          "textjustification": 0,
+          "fontsize": 12
         }
       },
       {
@@ -554,23 +556,24 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            320.0,
-            330.0,
-            80.0,
-            20.0
+            320,
+            330,
+            80,
+            20
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            52.0,
-            157.0,
-            18.0
+            8,
+            52,
+            84,
+            18
           ],
           "text": "Key input",
           "annotation_name": "Key input",
           "annotation": "The most recent key played. Black keys are marked as ignored.",
           "parameter_enable": 0,
-          "textjustification": 0
+          "textjustification": 0,
+          "fontsize": 12
         }
       },
       {
@@ -580,23 +583,24 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            320.0,
-            355.0,
-            80.0,
-            22.0
+            320,
+            355,
+            80,
+            22
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            70.0,
-            157.0,
-            22.0
+            8,
+            70,
+            84,
+            22
           ],
           "text": "-",
           "annotation_name": "Key input",
           "annotation": "The most recent key played. Black keys are marked as ignored.",
           "parameter_enable": 0,
-          "textjustification": 0
+          "textjustification": 0,
+          "fontsize": 12
         }
       },
       {
@@ -606,23 +610,24 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            430.0,
-            330.0,
-            80.0,
-            20.0
+            430,
+            330,
+            80,
+            20
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            98.0,
-            157.0,
-            18.0
+            92,
+            52,
+            94,
+            18
           ],
           "text": "Key output",
           "annotation_name": "Key output",
           "annotation": "The note sent to the instrument. Shows Disabled when Live Scale Mode is off.",
           "parameter_enable": 0,
-          "textjustification": 0
+          "textjustification": 0,
+          "fontsize": 12
         }
       },
       {
@@ -632,23 +637,24 @@
           "numinlets": 1,
           "numoutlets": 0,
           "patching_rect": [
-            430.0,
-            355.0,
-            80.0,
-            22.0
+            430,
+            355,
+            80,
+            22
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            116.0,
-            157.0,
-            22.0
+            92,
+            70,
+            94,
+            22
           ],
           "text": "-",
           "annotation_name": "Key output",
           "annotation": "The note sent to the instrument. Shows Disabled when Live Scale Mode is off.",
           "parameter_enable": 0,
-          "textjustification": 0
+          "textjustification": 0,
+          "fontsize": 12
         }
       },
       {
@@ -661,10 +667,10 @@
             ""
           ],
           "patching_rect": [
-            320.0,
-            292.0,
-            72.0,
-            22.0
+            320,
+            292,
+            72,
+            22
           ],
           "text": "prepend set"
         }
@@ -679,10 +685,10 @@
             ""
           ],
           "patching_rect": [
-            320.0,
-            352.0,
-            72.0,
-            22.0
+            320,
+            352,
+            72,
+            22
           ],
           "text": "prepend set"
         }
@@ -697,10 +703,10 @@
             ""
           ],
           "patching_rect": [
-            430.0,
-            352.0,
-            72.0,
-            22.0
+            430,
+            352,
+            72,
+            22
           ],
           "text": "prepend set"
         }
@@ -716,10 +722,10 @@
             "int"
           ],
           "patching_rect": [
-            60.0,
-            130.0,
-            68.0,
-            22.0
+            60,
+            130,
+            68,
+            22
           ],
           "text": "unpack 0 0"
         }
@@ -735,17 +741,17 @@
             ""
           ],
           "patching_rect": [
-            320.0,
-            430.0,
-            157.0,
-            22.0
+            320,
+            430,
+            157,
+            22
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            24.0,
-            157.0,
-            22.0
+            8,
+            24,
+            178,
+            22
           ],
           "mode": 0,
           "parameter_enable": 1,
@@ -755,28 +761,28 @@
           "annotation_name": "Scale",
           "annotation": "The Live scale currently shaping the white keys. Shows Enable Scale Mode when Live Scale Mode is off.",
           "bgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "saved_attribute_attributes": {
             "valueof": {
@@ -798,46 +804,46 @@
             }
           },
           "activebgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activebgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "focusbordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activetextcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "accentcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "tricolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ]
         }
       },
@@ -852,17 +858,17 @@
             ""
           ],
           "patching_rect": [
-            320.0,
-            430.0,
-            157.0,
-            22.0
+            320,
+            430,
+            157,
+            22
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            70.0,
-            157.0,
-            22.0
+            8,
+            70,
+            84,
+            22
           ],
           "mode": 0,
           "parameter_enable": 1,
@@ -872,28 +878,28 @@
           "annotation_name": "Key input",
           "annotation": "The most recent key played. Black keys are marked as ignored.",
           "bgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "saved_attribute_attributes": {
             "valueof": {
@@ -915,46 +921,46 @@
             }
           },
           "activebgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activebgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "focusbordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activetextcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "accentcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "tricolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ]
         }
       },
@@ -969,17 +975,17 @@
             ""
           ],
           "patching_rect": [
-            320.0,
-            430.0,
-            157.0,
-            22.0
+            320,
+            430,
+            157,
+            22
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            116.0,
-            157.0,
-            22.0
+            92,
+            70,
+            94,
+            22
           ],
           "mode": 0,
           "parameter_enable": 1,
@@ -989,28 +995,28 @@
           "annotation_name": "Key output",
           "annotation": "The note sent to the instrument. Shows Disabled when Live Scale Mode is off.",
           "bgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "saved_attribute_attributes": {
             "valueof": {
@@ -1032,46 +1038,46 @@
             }
           },
           "activebgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activebgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "focusbordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activetextcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "accentcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "tricolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ]
         }
       },
@@ -1085,10 +1091,10 @@
             ""
           ],
           "patching_rect": [
-            60.0,
-            305.0,
-            58.0,
-            22.0
+            60,
+            305,
+            58,
+            22
           ],
           "text": "pack 0 0"
         }
@@ -1104,17 +1110,17 @@
             ""
           ],
           "patching_rect": [
-            320.0,
-            430.0,
-            157.0,
-            18.0
+            320,
+            430,
+            157,
+            18
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            6.0,
-            157.0,
-            18.0
+            8,
+            6,
+            178,
+            18
           ],
           "mode": 0,
           "parameter_enable": 1,
@@ -1124,28 +1130,28 @@
           "annotation_name": "Scale",
           "annotation": "The Live scale currently shaping the white keys. Shows Enable Scale Mode when Live Scale Mode is off.",
           "bgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "saved_attribute_attributes": {
             "valueof": {
@@ -1167,46 +1173,46 @@
             }
           },
           "activebgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activebgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "focusbordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activetextcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "accentcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "tricolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ]
         }
       },
@@ -1221,17 +1227,17 @@
             ""
           ],
           "patching_rect": [
-            320.0,
-            430.0,
-            157.0,
-            18.0
+            320,
+            430,
+            157,
+            18
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            52.0,
-            157.0,
-            18.0
+            8,
+            52,
+            84,
+            18
           ],
           "mode": 0,
           "parameter_enable": 1,
@@ -1241,28 +1247,28 @@
           "annotation_name": "Key input",
           "annotation": "The most recent key played. Black keys are marked as ignored.",
           "bgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "saved_attribute_attributes": {
             "valueof": {
@@ -1284,46 +1290,46 @@
             }
           },
           "activebgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activebgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "focusbordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activetextcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "accentcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "tricolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ]
         }
       },
@@ -1338,17 +1344,17 @@
             ""
           ],
           "patching_rect": [
-            320.0,
-            430.0,
-            157.0,
-            18.0
+            320,
+            430,
+            157,
+            18
           ],
           "presentation": 1,
           "presentation_rect": [
-            8.0,
-            98.0,
-            157.0,
-            18.0
+            92,
+            52,
+            94,
+            18
           ],
           "mode": 0,
           "parameter_enable": 1,
@@ -1358,28 +1364,28 @@
           "annotation_name": "Key output",
           "annotation": "The note sent to the instrument. Shows Disabled when Live Scale Mode is off.",
           "bgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "bordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "saved_attribute_attributes": {
             "valueof": {
@@ -1401,47 +1407,133 @@
             }
           },
           "activebgcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activebgoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "focusbordercolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "activetextcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "textoncolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "accentcolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ],
           "tricolor": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0,
+            0
           ]
+        }
+      },
+      {
+        "box": {
+          "id": "obj-chord-mode",
+          "maxclass": "toggle",
+          "numinlets": 1,
+          "numoutlets": 1,
+          "outlettype": [
+            "int"
+          ],
+          "parameter_enable": 0,
+          "patching_rect": [
+            650,
+            100,
+            22,
+            22
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            92,
+            98,
+            20,
+            20
+          ],
+          "saved_attribute_attributes": {
+            "valueof": {
+              "parameter_longname": "Chord Mode",
+              "parameter_shortname": "Chord Mode",
+              "parameter_type": 2,
+              "parameter_mmax": 1,
+              "parameter_enum": [
+                "off",
+                "on"
+              ],
+              "parameter_annotation_name": "Chord Mode",
+              "parameter_info": "When enabled, each white key plays the diatonic triad for that scale degree.",
+              "parameter_order": 7
+            }
+          },
+          "varname": "chord_mode"
+        }
+      },
+      {
+        "box": {
+          "id": "obj-chord-mode-label",
+          "maxclass": "live.comment",
+          "numinlets": 1,
+          "numoutlets": 0,
+          "patching_rect": [
+            680,
+            100,
+            90,
+            20
+          ],
+          "presentation": 1,
+          "presentation_rect": [
+            8,
+            98,
+            80,
+            18
+          ],
+          "text": "Chord mode",
+          "annotation_name": "Chord Mode",
+          "annotation": "When enabled, each white key plays the diatonic triad for that scale degree.",
+          "parameter_enable": 0,
+          "textjustification": 0,
+          "fontsize": 12
+        }
+      },
+      {
+        "box": {
+          "id": "obj-chord-mode-message",
+          "maxclass": "message",
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ],
+          "patching_rect": [
+            650,
+            145,
+            88,
+            22
+          ],
+          "text": "chordmode $1"
         }
       }
     ],
@@ -1805,15 +1897,39 @@
             6
           ]
         }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-chord-mode",
+            0
+          ],
+          "destination": [
+            "obj-chord-mode-message",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "obj-chord-mode-message",
+            0
+          ],
+          "destination": [
+            "obj-js",
+            0
+          ]
+        }
       }
     ],
     "openrect": [
-      0.0,
-      0.0,
-      171.0,
-      146.0
+      0,
+      0,
+      186,
+      124
     ],
-    "devicewidth": 171.0,
+    "devicewidth": 186,
     "description": "",
     "digest": ""
   }

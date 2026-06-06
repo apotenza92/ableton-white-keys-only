@@ -7,6 +7,7 @@ setoutletassist(1, "display status messages");
 var rootNote = 0;
 var scaleName = "major";
 var liveScaleMode = 1;
+var chordMode = 0;
 var liveScaleIntervals = null;
 var liveApis = [];
 var activeNotes = {};
@@ -68,6 +69,13 @@ function scale(value) {
     scaleName = normalised;
     scaleinfo();
   }
+}
+
+function chordmode(value) {
+  var enabled = firstNumber(value);
+  chordMode = enabled ? 1 : 0;
+  allnotesoff();
+  clearKeyInfo();
 }
 
 function initlive() {
@@ -190,7 +198,7 @@ function list() {
     var mappedOff = activeNotes[key];
     if (mappedOff !== undefined) {
       delete activeNotes[key];
-      outlet(0, [mappedOff, 0, channel]);
+      outputNotes(mappedOff, 0, channel);
     }
     return;
   }
@@ -203,10 +211,19 @@ function list() {
     return;
   }
 
-  activeNotes[key] = mappedPitch;
+  if (chordMode) {
+    allnotesoff();
+  }
+
+  var outputPitches = chordMode ? mapChord(inputPitch) : [mappedPitch];
+  activeNotes[key] = outputPitches;
   outlet(1, ["inputkey", noteNameWithOctave(inputPitch)]);
-  outlet(1, ["outputkey", noteNameWithOctave(mappedPitch)]);
-  outlet(0, [mappedPitch, velocity, channel]);
+  if (chordMode) {
+    outlet(1, ["outputkey"].concat(chordDisplay(inputPitch, outputPitches)));
+  } else {
+    outlet(1, ["outputkey", noteNameWithOctave(mappedPitch)]);
+  }
+  outputNotes(outputPitches, velocity, channel);
 }
 
 function disabledKeyInfo() {
@@ -226,9 +243,16 @@ function allnotesoff() {
     }
 
     var parts = key.split(":");
-    outlet(0, [activeNotes[key], 0, parseInt(parts[0], 10)]);
+    outputNotes(activeNotes[key], 0, parseInt(parts[0], 10));
   }
   activeNotes = {};
+}
+
+function outputNotes(pitches, velocity, channel) {
+  var notes = pitches instanceof Array ? pitches : [pitches];
+  for (var i = 0; i < notes.length; i++) {
+    outlet(0, [notes[i], velocity, channel]);
+  }
 }
 
 function mapPitch(inputPitch) {
@@ -240,14 +264,82 @@ function mapPitch(inputPitch) {
   }
 
   var sourceOctave = Math.floor(inputPitch / 12);
-  var scale = liveScaleMode && liveScaleIntervals && liveScaleIntervals.length
-    ? liveScaleIntervals
-    : SCALES[scaleName] || SCALES.major;
+  var scale = currentScale();
   var degree = degreeInfo.degree % scale.length;
   var wrappedOctave = Math.floor(degreeInfo.degree / scale.length);
   var mapped = sourceOctave * 12 + rootNote + scale[degree] + wrappedOctave * 12;
 
   return clamp(mapped, 0, 127);
+}
+
+function mapChord(inputPitch) {
+  var pitchClass = positiveModulo(inputPitch, 12);
+  var degreeInfo = WHITE_KEY_TO_DEGREE[pitchClass];
+
+  if (!degreeInfo) {
+    return [];
+  }
+
+  return [
+    mapScaleDegree(inputPitch, degreeInfo.degree),
+    mapScaleDegree(inputPitch, degreeInfo.degree + 2),
+    mapScaleDegree(inputPitch, degreeInfo.degree + 4)
+  ];
+}
+
+function mapScaleDegree(inputPitch, scaleDegree) {
+  var sourceOctave = Math.floor(inputPitch / 12);
+  var scale = currentScale();
+  var degree = positiveModulo(scaleDegree, scale.length);
+  var wrappedOctave = Math.floor(scaleDegree / scale.length);
+  var mapped = sourceOctave * 12 + rootNote + scale[degree] + wrappedOctave * 12;
+
+  return clamp(mapped, 0, 127);
+}
+
+function currentScale() {
+  return liveScaleMode && liveScaleIntervals && liveScaleIntervals.length
+    ? liveScaleIntervals
+    : SCALES[scaleName] || SCALES.major;
+}
+
+function chordDisplay(inputPitch, pitches) {
+  var label = chordName(inputPitch, pitches);
+  var notes = pitches.map(function(pitch) {
+    return noteName(pitch);
+  }).join("-");
+
+  return [label, notes];
+}
+
+function chordName(inputPitch, pitches) {
+  if (!pitches.length) {
+    return "-";
+  }
+
+  var pitchClass = positiveModulo(inputPitch, 12);
+  var degreeInfo = WHITE_KEY_TO_DEGREE[pitchClass];
+  var root = pitches[0];
+  var third = positiveModulo(pitches[1] - root, 12);
+  var fifth = positiveModulo(pitches[2] - root, 12);
+  var roman = romanNumeral(degreeInfo ? degreeInfo.degree : 0);
+
+  if (third === 3 && fifth === 7) {
+    roman = roman.toLowerCase();
+  } else if (third === 3 && fifth === 6) {
+    roman = roman.toLowerCase() + "dim";
+  } else if (third === 4 && fifth === 8) {
+    roman = roman + "aug";
+  } else if (third === 4 && fifth !== 7) {
+    roman = roman + "sus";
+  }
+
+  return roman + " (" + noteName(root) + ")";
+}
+
+function romanNumeral(scaleDegree) {
+  var numerals = ["I", "II", "III", "IV", "V", "VI", "VII"];
+  return numerals[positiveModulo(scaleDegree, numerals.length)];
 }
 
 function positiveModulo(value, divisor) {
